@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.54.0" />
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="">
 	
 		<title>
-				Today I Learned
+				Vim :normal &middot; Today I Learned
 		</title>
 	
 		
@@ -20,7 +18,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 	
 		
-		<link href="https://todayilearned.dev/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 	
     <body>
@@ -35,10 +33,16 @@
         
 
 <main>
-	<div class="catalogue">
-		
-      <div class="catalogue-item" style="padding: 0 0 10px 0">
-        
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-03-11 17:00:10 -0400 EDT">March 11, 2019</time>
+</div>
+		<h1 class="post-title">Vim :normal</h1>
+<div class="post-line"></div>
+    
 
   <ul class="tags">
     
@@ -47,7 +51,9 @@
         </li></ul>
 
 
-        <p>Sometimes it is useful to use the <code>:normal</code> command in VIM, what it does is
+		
+
+		<p>Sometimes it is useful to use the <code>:normal</code> command in VIM, what it does is
 accept a sequence of keys and pretend they were typed in normal mode.</p>
 
 <p>Let&rsquo;s see how this works with a quick example. Suppose we have a file like the
@@ -117,59 +123,21 @@ hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;def&#34
 </tbody>
 </table>
 
-      </div>
-		
-      <div class="catalogue-item" style="padding: 0 0 10px 0">
-        
 
-  <ul class="tags">
-    
-      <li class="tag">
-          <a href="https://todayilearned.dev/tags/vim/">vim</a>
-        </li></ul>
-
-
-        <p>TIL about the <code>&amp;</code> command in Vim and how it can be used to repeat the last search and
-replace pattern.</p>
-
-<p>Let&rsquo;s see how this works with a quick example. Suppose we have a file like the
-following:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">rock paper scissors
-rock paper scissors
-rock paper scissors</code></pre></div>
-
-<p>And you want to replace the word <code>rock</code> with <code>lizard</code> just in the lines one and
-three (don&rsquo;t ask me why). Normally I would do something like:</p>
-
-<p><code>1s/rock/lizard/ | 3s/rock/lizard</code></p>
-
-<p>But there is a shortcut, the <code>&amp;</code> command:</p>
-
-<p><code>1s/rock/lizard/ | 3&amp;</code></p>
-
-<p>The <code>&amp;</code> command only repeats the last search and replace <em>without</em> flags though.
-To keep the flags you need to use the <code>&amp;</code> command with the (guess what?) <code>&amp;</code> flag.
-If we had a flag in the last example it would become something like:</p>
-
-<p><code>1s/rock/lizard/i | 3&amp;&amp;</code></p>
-
-      </div>
 		
 	</div>
 
 	<div class="pagination">
-		
-		
+		<a href="/posts/vim-repeat-substitute/" class="left arrow">&#8592;</a>
 
-    
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-03-11 17:27:02.853036 -0400 EDT m=&#43;0.060298488">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			&copy; <time datetime="2019-03-11 17:27:02.852962 -0400 EDT m=&#43;0.060224560">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
 			</span>
 		</footer>
 
