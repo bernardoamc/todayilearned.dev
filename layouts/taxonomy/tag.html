@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<main>
+  <div class="posts">
+    <div class="selected-tag">
+      <h1>{{ .Title }}</h1>
+    </div>
+
+    {{ range .Data.Pages }}
+      <div class="post-by-tag">
+        {{- if .PublishDate }}
+          <time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time>:&nbsp;
+        {{- end }}
+
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+        <br>
+      </div>
+    {{ end }}
+  </div>
+</main>
+
+{{ end }}

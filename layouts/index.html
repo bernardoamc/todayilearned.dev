@@ -1,11 +1,12 @@
 {{ define "main" }}
 
 <main>
-	{{ partial "index/introduction.html" . }}
-
 	<div class="catalogue">
 		{{ range (.Paginate .Pages).Pages }}
-      {{ .Content }}
+      <div class="catalogue-item" style="padding: 0 0 10px 0">
+        {{ partial "tags.html" .}}
+        {{ .Content }}
+      </div>
 		{{ end }}
 	</div>
 

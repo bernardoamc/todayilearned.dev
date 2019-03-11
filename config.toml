@@ -4,4 +4,7 @@ title = "Today I Learned"
 theme = "tale"
 
 [Author]
-    name = "Bernardo"
+  name = "Bernardo"
+
+[Params]
+  css = ["tags.css"]
