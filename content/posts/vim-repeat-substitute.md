@@ -1,7 +1,8 @@
 ---
+author: "Bernardo"
 title: "Vim Repeat Substitute"
 date: 2019-03-10T20:25:10-04:00
-draft: false
+tags: ["vim"]
 ---
 
 TIL about the `&` command in Vim and how it can be used to repeat the last search and
