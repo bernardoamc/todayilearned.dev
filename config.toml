@@ -1,4 +1,7 @@
 baseURL = "https://todayilearned.dev"
 languageCode = "en-us"
-title = "TIL"
+title = "Today I Learned"
 theme = "tale"
+
+[Author]
+    name = "Bernardo"

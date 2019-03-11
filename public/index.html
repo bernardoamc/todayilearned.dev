@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="">
+	
+		<title>
+				Today I Learned
+		</title>
+	
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	
+		
+		<link href="https://todayilearned.dev/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+	
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+			</div>
+		</nav>
+
+        
+
+<main>
+	
+
+
+	<div class="catalogue">
+		
+      <p>TIL about the <code>&amp;</code> command in Vim and how it can be used to repeat the last search and
+replace pattern.</p>
+
+<p>Let&rsquo;s see how this works with a quick example. Suppose we have a file like the
+following:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">rock paper scissors
+rock paper scissors
+rock paper scissors</code></pre></div>
+
+<p>And you want to replace the word <code>rock</code> with <code>lizard</code> just in the lines one and
+three (don&rsquo;t ask me why). Normally I would do something like:</p>
+
+<p><code>1s/rock/lizard/ | 3s/rock/lizard</code></p>
+
+<p>But there is a shortcut, the <code>&amp;</code> command:</p>
+
+<p><code>1s/rock/lizard/ | 3&amp;</code></p>
+
+<p>The <code>&amp;</code> command only repeats the last search and replace <em>without</em> flags though.
+To keep the flags you need to use the <code>&amp;</code> command with the (guess what?) <code>&amp;</code> flag.
+If we had a flag in the last example it would become something like:</p>
+
+<p><code>1s/rock/lizard/i | 3&amp;&amp;</code></p>
+
+		
+      <p>This is a single resource</p>
+
+		
+	</div>
+
+	<div class="pagination">
+		
+		
+
+    
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-03-10 22:00:08.027448 -0400 EDT m=&#43;0.057574648">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>

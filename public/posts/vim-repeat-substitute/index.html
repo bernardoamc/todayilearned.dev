@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>
+				Vim Repeat Substitute &middot; Today I Learned
+		</title>
+	
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+	
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-03-10 20:25:10 -0400 EDT">March 10, 2019</time>
+</div>
+		<h1 class="post-title">Vim Repeat Substitute</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>TIL about the <code>&amp;</code> command in Vim and how it can be used to repeat the last search and
+replace pattern.</p>
+
+<p>Let&rsquo;s see how this works with a quick example. Suppose we have a file like the
+following:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">rock paper scissors
+rock paper scissors
+rock paper scissors</code></pre></div>
+
+<p>And you want to replace the word <code>rock</code> with <code>lizard</code> just in the lines one and
+three (don&rsquo;t ask me why). Normally I would do something like:</p>
+
+<p><code>1s/rock/lizard/ | 3s/rock/lizard</code></p>
+
+<p>But there is a shortcut, the <code>&amp;</code> command:</p>
+
+<p><code>1s/rock/lizard/ | 3&amp;</code></p>
+
+<p>The <code>&amp;</code> command only repeats the last search and replace <em>without</em> flags though.
+To keep the flags you need to use the <code>&amp;</code> command with the (guess what?) <code>&amp;</code> flag.
+If we had a flag in the last example it would become something like:</p>
+
+<p><code>1s/rock/lizard/i | 3&amp;&amp;</code></p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/about/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-03-10 22:00:08.02681 -0400 EDT m=&#43;0.056936735">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>
