@@ -1,0 +1,4 @@
+baseURL = "https://todayilearned.dev"
+languageCode = "en-us"
+title = "TIL"
+theme = "tale"
