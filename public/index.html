@@ -51,6 +51,47 @@
   <ul class="tags">
     
       <li class="tag">
+          <a href="https://todayilearned.dev/tags/bash/">bash</a>
+        </li></ul>
+
+
+          <p>The <code>ps</code> command is well known for displaying process information, but
+it was only recently that I found out about the useful <code>-o</code> flag. What
+this flag does is display the informatin about one or more selected
+headers.</p>
+
+<p>Let&rsquo;s see an example where we display the <code>rss</code> (Resident Set Size) for the
+process with <code>pid</code> 5380:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ps -o rss -p <span style="color:#ae81ff">5380</span>
+   RSS
+  <span style="color:#ae81ff">1784</span></code></pre></div>
+
+<ul>
+<li>rss represents the <code>real memory</code>, that is, the process&rsquo;s memory that is
+held in RAM.</li>
+</ul>
+
+<p>We can also display more headers separating them with commas:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ps -o rss,%cpu,%mem -p <span style="color:#ae81ff">348</span>
+   RSS  %CPU %MEM
+<span style="color:#ae81ff">179468</span>   <span style="color:#ae81ff">5</span>.8  <span style="color:#ae81ff">2</span>.1</code></pre></div>
+
+<p>And we can also add a new label for a header:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ps -o rss<span style="color:#f92672">=</span>RealMemory -p <span style="color:#ae81ff">348</span>
+RealMemory
+    <span style="color:#ae81ff">179572</span></code></pre></div>
+
+        </div>
+      
+        <div class="catalogue-item" style="padding: 0 0 10px 0">
+          
+
+  <ul class="tags">
+    
+      <li class="tag">
           <a href="https://todayilearned.dev/tags/vim/">vim</a>
         </li></ul>
 
@@ -179,7 +220,7 @@ If we had a flag in the last example it would become something like:</p>
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-03-12 08:15:11.566023 -0400 EDT m=&#43;0.066617055">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			&copy; <time datetime="2019-03-12 08:22:44.745243 -0400 EDT m=&#43;0.062728158">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
 			</span>
 		</footer>
 
