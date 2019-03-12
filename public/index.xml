@@ -34,5 +34,14 @@ Let&amp;rsquo;s see how this works with a quick example. Suppose we have a file 
 rock paper scissors rock paper scissors rock paper scissors And you want to replace the word rock with lizard just in the lines one and three (don&amp;rsquo;t ask me why). Normally I would do something like:</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://todayilearned.dev/topics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://todayilearned.dev/topics/</guid>
+      <description>Topics: </description>
+    </item>
+    
   </channel>
 </rss>
