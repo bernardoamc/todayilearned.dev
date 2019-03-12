@@ -2,12 +2,17 @@
 
 <main>
 	<div class="catalogue">
-		{{ range (.Paginate .Pages).Pages }}
-      <div class="catalogue-item" style="padding: 0 0 10px 0">
-        {{ partial "tags.html" .}}
-        {{ .Content }}
-      </div>
-		{{ end }}
+
+    {{ $taxo := "posts" }}
+    {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
+      {{ range (.Paginate .Pages).Pages }}
+        <div class="catalogue-item" style="padding: 0 0 10px 0">
+          {{ partial "tags.html" .}}
+          {{ .Content }}
+        </div>
+      {{ end }}
+    {{ end }}
+
 	</div>
 
 	<div class="pagination">
