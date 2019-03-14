@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Mar 2019 07:50:10 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 07:50:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bin/rails about</title>
+      <link>https://todayilearned.dev/posts/rake-about/</link>
+      <pubDate>Thu, 14 Mar 2019 07:50:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/rake-about/</guid>
+      <description>You can use bin/rails about to get information from your Rails project.
+$ bin/rails about About your application&amp;#39;s environment Rails version 5.2.2 Ruby version 2.6.1-p33 (x86_64-darwin18) RubyGems version 3.0.2 Rack version 2.0.6 JavaScript Runtime Node.js (V8) Middleware Webpacker::DevServerProxy, Rack::Cors, ... Application root /my/application/root Environment development Database adapter mysql2 Database schema version 20190310174207 </description>
+    </item>
     
     <item>
       <title>The ps -o flag</title>
