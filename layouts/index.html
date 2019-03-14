@@ -6,7 +6,7 @@
     {{ $taxo := "posts" }}
     {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
       {{ range (.Paginate .Pages).Pages }}
-        <div class="catalogue-item" style="padding: 0 0 10px 0">
+        <div class="main-item catalogue-item">
           {{ partial "tags.html" .}}
           {{ .Content }}
         </div>

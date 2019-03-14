@@ -7,4 +7,4 @@ theme = "tale"
   name = "Bernardo"
 
 [Params]
-  css = ["tags.css"]
+  css = ["tags.css", "main_item.css"]
