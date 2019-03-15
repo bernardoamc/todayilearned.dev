@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/at-command/</loc>
+    <lastmod>2019-03-15T12:15:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/rake-about/</loc>
     <lastmod>2019-03-14T07:50:10-04:00</lastmod>
   </url>
@@ -28,7 +33,7 @@
   
   <url>
     <loc>https://todayilearned.dev/tags/bash/</loc>
-    <lastmod>2019-03-12T07:50:10-04:00</lastmod>
+    <lastmod>2019-03-15T12:15:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,7 +44,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-03-14T07:50:10-04:00</lastmod>
+    <lastmod>2019-03-15T12:15:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,13 +56,13 @@
   
   <url>
     <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-03-12T07:50:10-04:00</lastmod>
+    <lastmod>2019-03-15T12:15:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-03-14T07:50:10-04:00</lastmod>
+    <lastmod>2019-03-15T12:15:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
