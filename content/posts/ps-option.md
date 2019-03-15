@@ -7,7 +7,7 @@ tags: ["bash"]
 
 The `ps` command is well known for displaying process information, but
 it was only recently that I found out about the useful `-o` flag. What
-this flag does is display the informatin about one or more selected
+this flag does is display the information about one or more selected
 headers.
 
 Let's see an example where we display the `rss` (Resident Set Size) for the
