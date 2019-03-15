@@ -19,7 +19,7 @@
       <guid>https://todayilearned.dev/posts/at-command/</guid>
       <description>TIL about the at command. It allows us to schedule commands to be executed at a later time.
 $ echo &amp;#34;bla&amp;#34; | at now + 5 minutes or if you want to execute commands from a file later on:
-$ at -f path/to/file 9:30 PM Tue </description>
+$ at -f path/to/file 9:30 PM Tue We can type atq to see existing jobs. For more information check man or tldr, it&amp;rsquo;s a really interesting suite of commands.</description>
     </item>
     
     <item>

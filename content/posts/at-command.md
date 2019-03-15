@@ -17,3 +17,6 @@ or if you want to execute commands from a file later on:
 {{< highlight bash >}}
 $ at -f path/to/file 9:30 PM Tue
 {{< /highlight >}}
+
+We can type `atq` to see existing jobs. For more information
+check `man` or `tldr`, it's a really interesting suite of commands.
