@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 12:15:10 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 16 Mar 2019 09:15:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Intersection Observer API</title>
+      <link>https://todayilearned.dev/posts/intersection-observer-api/</link>
+      <pubDate>Sat, 16 Mar 2019 09:15:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/intersection-observer-api/</guid>
+      <description>TIL about the Intersection Observer API. It allows us to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document&amp;rsquo;s viewport.
+Let&amp;rsquo;s see a small example:
+// Create the observer and pass it a callback function. // The callback will run whenever a threshold is crossed. var options = { root: document.querySelector(&amp;#39;#scrollArea&amp;#39;), rootMargin: &amp;#39;0px&amp;#39;, threshold: 1.0 } var observer = new IntersectionObserver(callback, options); // Watch this element, please: var target = document.</description>
+    </item>
     
     <item>
       <title>at command</title>

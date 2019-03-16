@@ -52,6 +52,40 @@
   <ul class="tags">
     
       <li class="tag">
+          <a href="https://todayilearned.dev/tags/javascript/">javascript</a>
+        </li></ul>
+
+
+          <p>TIL about the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">Intersection Observer API</a>.
+It allows us to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document&rsquo;s viewport.</p>
+
+<p>Let&rsquo;s see a small example:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Create the observer and pass it a callback function.
+</span><span style="color:#75715e">// The callback will run whenever a threshold is crossed.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;#scrollArea&#39;</span>),
+  <span style="color:#a6e22e">rootMargin</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;0px&#39;</span>,
+  <span style="color:#a6e22e">threshold</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1.0</span>
+}
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">observer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">IntersectionObserver</span>(<span style="color:#a6e22e">callback</span>, <span style="color:#a6e22e">options</span>);
+
+<span style="color:#75715e">// Watch this element, please:
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">target</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;#listItem&#39;</span>);
+<span style="color:#a6e22e">observer</span>.<span style="color:#a6e22e">observe</span>(<span style="color:#a6e22e">target</span>);
+</code></pre></div>
+
+<p>The linked page provides a much deeper explanation, but that&rsquo;s the gist of it!</p>
+
+        </div>
+      
+        <div class="main-item catalogue-item">
+          
+
+  <ul class="tags">
+    
+      <li class="tag">
           <a href="https://todayilearned.dev/tags/bash/">bash</a>
         </li></ul>
 
@@ -273,7 +307,7 @@ If we had a flag in the last example it would become something like:</p>
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-03-15 12:42:28.229846 -0400 EDT m=&#43;0.068935437">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			&copy; <time datetime="2019-03-16 15:48:08.989182 -0400 EDT m=&#43;0.223960804">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
 			</span>
 		</footer>
 
