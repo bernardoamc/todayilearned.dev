@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Mar 2019 09:15:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 09:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jot command</title>
+      <link>https://todayilearned.dev/posts/jot-command/</link>
+      <pubDate>Sun, 17 Mar 2019 09:00:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/jot-command/</guid>
+      <description>TIL about the jot command. It allows us to print sequential or random data.
+The basic option has the format jot [numbers] [start_with] $ jot 3 10 10 11 12
+or if you want to generate random data: jot -r [numbers] [lower_limit] [upper_limit]
+$ jot -r 3 1 20 5 12 19 Not all of the flags are covered here, man jot does a good job explaining them.</description>
+    </item>
     
     <item>
       <title>Intersection Observer API</title>
