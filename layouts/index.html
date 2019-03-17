@@ -4,8 +4,9 @@
 	<div class="catalogue">
 
     {{ $taxo := "posts" }}
+    {{ $paginator := .Paginate (where .Site.Pages "Type" $taxo) }}
     {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
-      {{ range (.Paginate .Pages).Pages }}
+      {{ range $paginator.Pages }}
         <div class="main-item catalogue-item">
           {{ partial "tags.html" .}}
           {{ .Content }}
