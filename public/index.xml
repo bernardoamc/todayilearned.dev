@@ -6,10 +6,22 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 09:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 07:50:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tldr pages</title>
+      <link>https://todayilearned.dev/posts/tldr-pages/</link>
+      <pubDate>Mon, 18 Mar 2019 07:50:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/tldr-pages/</guid>
+      <description>TIL about tldr pages, a collection of simplified and community-driven man pages.
+It&amp;rsquo;s especially useful when we already know that we need a certain tool but forgot exactly which way to use it. Going through man mytool can be a slow process sometimes.
+Let&amp;rsquo;s see a tldr lsof example:
+$ tldr lsof lsof Lists open files and the corresponding processes. Note: Root privileges (or sudo) is required to list files opened by others.</description>
+    </item>
     
     <item>
       <title>jot command</title>
