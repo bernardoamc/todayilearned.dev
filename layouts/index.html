@@ -8,7 +8,11 @@
     {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
       {{ range $paginator.Pages }}
         <div class="main-item catalogue-item">
-          {{ partial "tags.html" .}}
+          <div class="metadata">
+            {{ partial "tags.html" .}}
+            {{ partial "permalink.html" .}}
+          </div>
+
           {{ .Content }}
         </div>
       {{ end }}
