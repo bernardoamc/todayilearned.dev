@@ -15,7 +15,20 @@
 		
 	    <script src="content/clipboard.min.js"></script>
 
-    	<script> window.onload = function() { new ClipboardJS('.permalink button'); } </script>
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000)
+          });
+        }
+
+      </script>
 
 		
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -55,7 +68,7 @@
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-03-19 15:46:47.642644 -0400 EDT m=&#43;0.077029464">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			&copy; <time datetime="2019-03-20 12:56:55.374163 -0400 EDT m=&#43;0.071587377">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
 			</span>
 		</footer>
 
