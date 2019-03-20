@@ -4,17 +4,19 @@
 	<div class="catalogue">
 
     {{ $taxo := "posts" }}
-    {{ $paginator := .Paginate (where .Site.Pages "Type" $taxo) }}
+    {{ $paginator := .Paginate (where .Site.Pages "Section" $taxo) }}
     {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
       {{ range $paginator.Pages }}
-        <div class="main-item catalogue-item">
-          <div class="metadata">
-            {{ partial "tags.html" .}}
-            {{ partial "permalink.html" .}}
-          </div>
+        {{ if .Content }}
+          <div class="main-item catalogue-item">
+            <div class="metadata">
+              {{ partial "tags.html" .}}
+              {{ partial "permalink.html" .}}
+            </div>
 
-          {{ .Content }}
-        </div>
+            {{ .Content }}
+          </div>
+        {{ end }}
       {{ end }}
     {{ end }}
 
