@@ -29,7 +29,20 @@
 	    <!-- JS -->
 	    <script src="content/clipboard.min.js"></script>
 
-    	<script> window.onload = function() { new ClipboardJS('.permalink button'); } </script>
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000)
+          });
+        }
+
+      </script>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon-32x32.png" | relURL }}">
