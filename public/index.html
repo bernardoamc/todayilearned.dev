@@ -22,11 +22,13 @@
           const clipboard = new ClipboardJS('.permalink button');
           const toast = document.querySelector('.toast');
 
+	  let timeout = -1;
           clipboard.on('success', function(e) {
+            clearTimeout(timeout);
             toast.classList.add('open');
-            setTimeout(function() {
+            timeout = setTimeout(function() {
             	toast.classList.remove('open')
-            }, 2000)
+            }, 2000);
           });
         }
 
