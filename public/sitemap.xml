@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/android-memory-usage/</loc>
+    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/will-change/</loc>
     <lastmod>2019-03-20T19:30:00-04:00</lastmod>
   </url>
@@ -57,6 +62,12 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/android/</loc>
+    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/tags/bash/</loc>
     <lastmod>2019-03-18T07:50:10-04:00</lastmod>
     <priority>0</priority>
@@ -81,7 +92,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-03-20T19:30:00-04:00</lastmod>
+    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,13 +110,13 @@
   
   <url>
     <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-03-18T07:50:10-04:00</lastmod>
+    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-03-20T19:30:00-04:00</lastmod>
+    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   

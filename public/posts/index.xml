@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Mar 2019 19:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2019 16:30:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>android memory usage</title>
+      <link>https://todayilearned.dev/posts/android-memory-usage/</link>
+      <pubDate>Fri, 22 Mar 2019 16:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/android-memory-usage/</guid>
+      <description>TIL Android has a tool called procrank (/system/xbin/procrank), which lists out the memory usage of Linux processes in order from highest to lowest usage. The sizes reported per process are VSS, RSS, PSS, and USS.
+VSS
+ is the total accessible address space of a process.  RSS
+ is the total memory actually held in RAM for a process, including shared libraries.  PSS
+ same as RSS, but reports the proportional size of its shared libraries.</description>
+    </item>
     
     <item>
       <title>will change</title>
