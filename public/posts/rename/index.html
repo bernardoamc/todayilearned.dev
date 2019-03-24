@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				rename &middot; Today I Learned
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-03-24 16:25:10 -0400 EDT">March 24, 2019</time>
+</div>
+		<h1 class="post-title">rename</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/bash/">bash</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about the <code>rename</code> command utility. It allows us to rename files using a
+Perl Common Regular Expression. Suppose we have the following files:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ls
+temp1.txt	temp2.txt	temp3.txt</code></pre></div>
+
+<p>Now we want to rename our files from <code>temp</code> to <code>final</code>, but are not really
+sure how to craft our regular expression. In this case we can use the <code>-n</code> flag:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rename -n <span style="color:#e6db74">&#39;s/temp/final/&#39;</span> *.txt
+<span style="color:#e6db74">&#39;temp1.txt&#39;</span> would be renamed to <span style="color:#e6db74">&#39;final1.txt&#39;</span>
+<span style="color:#e6db74">&#39;temp2.txt&#39;</span> would be renamed to <span style="color:#e6db74">&#39;final2.txt&#39;</span>
+<span style="color:#e6db74">&#39;temp3.txt&#39;</span> would be renamed to <span style="color:#e6db74">&#39;final3.txt&#39;</span></code></pre></div>
+
+<p>And when we are ready:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rename <span style="color:#e6db74">&#39;s/temp/final/&#39;</span> *.txt
+$ ls
+final1.txt	final2.txt	final3.txt</code></pre></div>
+
+<p>For MacOSX users <code>rename</code> can be installed through: <code>brew install rename</code>.
+The <code>tldr</code> tool does a great job summarizing the common use cases, but as always <code>man
+rename</code> explains the entire scope.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/android-memory-usage/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>

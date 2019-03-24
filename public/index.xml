@@ -6,10 +6,21 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Mar 2019 16:30:10 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2019 16:25:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rename</title>
+      <link>https://todayilearned.dev/posts/rename/</link>
+      <pubDate>Sun, 24 Mar 2019 16:25:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/rename/</guid>
+      <description>TIL about the rename command utility. It allows us to rename files using a Perl Common Regular Expression. Suppose we have the following files:
+$ ls temp1.txt	temp2.txt	temp3.txt Now we want to rename our files from temp to final, but are not really sure how to craft our regular expression. In this case we can use the -n flag:
+$ rename -n &amp;#39;s/temp/final/&amp;#39; *.txt &amp;#39;temp1.txt&amp;#39; would be renamed to &amp;#39;final1.</description>
+    </item>
     
     <item>
       <title>android memory usage</title>
