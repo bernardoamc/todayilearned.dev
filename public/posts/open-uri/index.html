@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				open-uri &middot; Today I Learned
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-03-30 12:50:45 -0400 EDT">March 30, 2019</time>
+</div>
+		<h1 class="post-title">open-uri</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/ruby/">ruby</a>
+        </li>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/security/">security</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL <code>open-uri</code> internally patches <code>Kernel.open</code> allowing remote code execution and reading local files.
+If the string provided to <code>open-uri</code> starts with a pipe it will get executed as
+a command:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">require <span style="color:#e6db74">&#34;open-uri&#34;</span>
+irb(main):<span style="color:#ae81ff">001</span>:<span style="color:#ae81ff">0</span><span style="color:#f92672">&gt;</span> require <span style="color:#e6db74">&#39;open-uri&#39;</span>
+<span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>
+irb(main):<span style="color:#ae81ff">002</span>:<span style="color:#ae81ff">0</span><span style="color:#f92672">&gt;</span> open(<span style="color:#e6db74">&#39;|ls&#39;</span>)<span style="color:#f92672">.</span>to_a
+<span style="color:#f92672">=&gt;</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;content</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;data</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;layouts</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;resources</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">]</span></code></pre></div>
+
+<p>For more information check <a href="https://sakurity.com/blog/2015/02/28/openuri.html">this resource</a>.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/scroll-behavior/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>

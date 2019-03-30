@@ -6,10 +6,20 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Mar 2019 20:45:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 30 Mar 2019 12:50:45 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>open-uri</title>
+      <link>https://todayilearned.dev/posts/open-uri/</link>
+      <pubDate>Sat, 30 Mar 2019 12:50:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/open-uri/</guid>
+      <description>TIL open-uri internally patches Kernel.open allowing remote code execution and reading local files. If the string provided to open-uri starts with a pipe it will get executed as a command:
+require &amp;#34;open-uri&amp;#34; irb(main):001:0&amp;gt; require &amp;#39;open-uri&amp;#39; =&amp;gt; true irb(main):002:0&amp;gt; open(&amp;#39;|ls&amp;#39;).to_a =&amp;gt; [&amp;#34;content\n&amp;#34;, &amp;#34;data\n&amp;#34;, &amp;#34;layouts\n&amp;#34;, &amp;#34;resources\n&amp;#34;] For more information check this resource.</description>
+    </item>
     
     <item>
       <title>scroll behavior</title>
