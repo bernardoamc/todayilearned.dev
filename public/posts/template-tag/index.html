@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				template tag &middot; Today I Learned
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-04-01 09:00:00 -0400 EDT">April 1, 2019</time>
+</div>
+		<h1 class="post-title">template tag</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/html/">html</a>
+        </li>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/javascript/">javascript</a>
+        </li>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/security/">security</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about the
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">template</a>
+tag. It&rsquo;s used to hold client-side content that is not to be rendered when a page
+is loaded but may subsequently be instantiated during runtime using JavaScript.</p>
+
+<p>Let&rsquo;s see some client side input without the template tag:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">container</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;div&#39;</span>);
+
+  <span style="color:#75715e">// This will trigger the alert
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">container</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;img src=x onerror=alert(1)&gt;&#34;</span>
+</code></pre></div>
+
+<p>Now let&rsquo;s use the <code>&lt;template&gt;</code> tag:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">container</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;template&#39;</span>);
+
+  <span style="color:#75715e">// Alert NOT triggered
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">container</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;img src=x onerror=alert(1)&gt;&#34;</span>
+</code></pre></div>
+
+<p>We can access the content inside a <code>template</code> with <code>template.content</code> and change the
+rendered HTML before actually inserting it on the page. There&rsquo;s a <a href="https://www.youtube.com/watch?v=lG7U3fuNw3A">great
+video</a> from <code>LiveOverflow</code>
+explaining how this tag is used by Google and many others in order to prevent
+<code>XSS</code> client-side and how a misconfiguration allowed <code>XSS</code> on Google Search.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/open-uri/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>

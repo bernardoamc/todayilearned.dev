@@ -39,9 +39,18 @@
     </item>
     
     <item>
+      <title>Html</title>
+      <link>https://todayilearned.dev/tags/html/</link>
+      <pubDate>Mon, 01 Apr 2019 09:00:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Javascript</title>
       <link>https://todayilearned.dev/tags/javascript/</link>
-      <pubDate>Sat, 16 Mar 2019 09:15:00 -0400</pubDate>
+      <pubDate>Mon, 01 Apr 2019 09:00:00 -0400</pubDate>
       
       <guid>https://todayilearned.dev/tags/javascript/</guid>
       <description></description>
@@ -68,7 +77,7 @@
     <item>
       <title>Security</title>
       <link>https://todayilearned.dev/tags/security/</link>
-      <pubDate>Sat, 30 Mar 2019 12:50:45 -0400</pubDate>
+      <pubDate>Mon, 01 Apr 2019 09:00:00 -0400</pubDate>
       
       <guid>https://todayilearned.dev/tags/security/</guid>
       <description></description>

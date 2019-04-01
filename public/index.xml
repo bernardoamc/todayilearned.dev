@@ -6,10 +6,22 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Mar 2019 12:50:45 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 09:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>template tag</title>
+      <link>https://todayilearned.dev/posts/template-tag/</link>
+      <pubDate>Mon, 01 Apr 2019 09:00:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/template-tag/</guid>
+      <description>TIL about the template tag. It&amp;rsquo;s used to hold client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.
+Let&amp;rsquo;s see some client side input without the template tag:
+let container = document.createElement(&amp;#39;div&amp;#39;); // This will trigger the alert  container.innerHTML = &amp;#34;&amp;lt;img src=x onerror=alert(1)&amp;gt;&amp;#34;  Now let&amp;rsquo;s use the &amp;lt;template&amp;gt; tag:
+let container = document.createElement(&amp;#39;template&amp;#39;); // Alert NOT triggered  container.</description>
+    </item>
     
     <item>
       <title>open-uri</title>
