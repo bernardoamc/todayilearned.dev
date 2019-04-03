@@ -6,10 +6,21 @@
     <description>Recent content in Rails on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Mar 2019 07:50:10 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 11:45:45 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>safe buffer back reference</title>
+      <link>https://todayilearned.dev/posts/safe-buffer-back-reference/</link>
+      <pubDate>Wed, 03 Apr 2019 11:45:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/safe-buffer-back-reference/</guid>
+      <description>TIL back references for sub, sub!, gsub, and gsub! are finally fixed for ActiveSupport::SafeBuffer through the use of block.binding.eval.
+The behaviour being fixed is:
+&amp;#34;foo123&amp;#34;.html_safe.sub(/([a-z]+)([0-9]+)/) { $2 + $1 #=&amp;gt; NoMethodError: undefined method `+&amp;#39; for nil:NilClass } If this is confusing I recommend the following resource: Bindings in Ruby – Behind the Magic of Blocks</description>
+    </item>
     
     <item>
       <title>bin/rails about</title>
