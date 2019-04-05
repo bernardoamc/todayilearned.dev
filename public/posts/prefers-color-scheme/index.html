@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				safe buffer back reference &middot; Today I Learned
+				prefers-color-scheme &middot; Today I Learned
 		</title>
 
 		
@@ -64,42 +64,36 @@
     <span>Written by</span>
         Bernardo
         <br>
-        <span>on&nbsp;</span><time datetime="2019-04-03 11:45:45 -0400 EDT">April 3, 2019</time>
+        <span>on&nbsp;</span><time datetime="2019-04-05 10:30:00 -0400 EDT">April 5, 2019</time>
 </div>
-		<h1 class="post-title">safe buffer back reference</h1>
+		<h1 class="post-title">prefers-color-scheme</h1>
 <div class="post-line"></div>
     
 
   <ul class="tags">
     
       <li class="tag">
-          <a href="https://todayilearned.dev/tags/ruby/">ruby</a>
-        </li>
-      <li class="tag">
-          <a href="https://todayilearned.dev/tags/rails/">rails</a>
+          <a href="https://todayilearned.dev/tags/css/">css</a>
         </li></ul>
 
 
 		
 
-		<p>TIL <code>back references</code> for <code>sub, sub!, gsub, and gsub!</code> are finally <a href="https://github.com/rails/rails/pull/34405">fixed</a> for
-<code>ActiveSupport::SafeBuffer</code> through the use of <code>block.binding.eval</code>.</p>
+		<p>TIL about the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> CSS media feature.
+It is used to detect if the user has requested the system use a light or dark color theme.</p>
 
-<p>The behaviour being fixed is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-color-scheme</span><span style="color:#f92672">:</span> <span style="color:#f92672">dark</span><span style="color:#f92672">)</span> {
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">&#34;foo123&#34;</span><span style="color:#f92672">.</span>html_safe<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">/([a-z]+)([0-9]+)/</span>) {
-  $2 <span style="color:#f92672">+</span> $1 <span style="color:#75715e">#=&gt; NoMethodError: undefined method `+&#39; for nil:NilClass</span>
 }</code></pre></div>
 
-<p>If this is confusing I recommend the following resource: <a href="https://blog.rebased.pl/2017/11/30/bindings-in-ruby-behind-the-magic-of-blocks.html">Bindings in Ruby – Behind the Magic of Blocks</a></p>
+<p>Right now it&rsquo;s a feature that is just supported by <code>Firefox</code> and <code>Safari</code>.</p>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/posts/template-tag/" class="left arrow">&#8592;</a>
-		<a href="/posts/prefers-color-scheme/" class="right arrow">&#8594;</a>
+		<a href="/posts/safe-buffer-back-reference/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
