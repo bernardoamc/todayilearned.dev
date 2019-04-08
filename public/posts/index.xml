@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Apr 2019 10:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 08 Apr 2019 12:45:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>base tag</title>
+      <link>https://todayilearned.dev/posts/base-tag/</link>
+      <pubDate>Mon, 08 Apr 2019 12:45:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/base-tag/</guid>
+      <description>TIL about the base HTML tag. It specifies the base URL to be used for all relative URLs within a document.
+&amp;lt;base href=&amp;#34;http://www.example.com/&amp;#34;&amp;gt; &amp;lt;!-- Refers to: http://www.example.com/#relative --&amp;gt; &amp;lt;a href=&amp;#34;#relative&amp;#34;&amp;gt;Relative&amp;lt;/a&amp;gt; It is supported by all major browsers.</description>
+    </item>
     
     <item>
       <title>prefers-color-scheme</title>
