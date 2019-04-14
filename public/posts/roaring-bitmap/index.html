@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Tags &middot; Today I Learned
+				roaring bitmap &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -57,13 +57,49 @@
 		</nav>
 
         
+
 <main>
-    <h1>Tags</h1>
-	<div class="catalogue">
-        <ul><li><a href="https://todayilearned.dev/tags/android/">Android</a></li><li><a href="https://todayilearned.dev/tags/bash/">Bash</a></li><li><a href="https://todayilearned.dev/tags/css/">Css</a></li><li><a href="https://todayilearned.dev/tags/data-structure/">Data Structure</a></li><li><a href="https://todayilearned.dev/tags/html/">Html</a></li><li><a href="https://todayilearned.dev/tags/javascript/">Javascript</a></li><li><a href="https://todayilearned.dev/tags/rails/">Rails</a></li><li><a href="https://todayilearned.dev/tags/ruby/">Ruby</a></li><li><a href="https://todayilearned.dev/tags/security/">Security</a></li><li><a href="https://todayilearned.dev/tags/vim/">Vim</a></li></ul>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-04-13 19:50:10 -0400 EDT">April 13, 2019</time>
+</div>
+		<h1 class="post-title">roaring bitmap</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/data-structure/">data-structure</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about <a href="http://roaringbitmap.org">roaring bitmap</a>, a hybrid data structure.</p>
+
+<p>It&rsquo;s a data structure that is especially suited to compute the intersection,
+union and the difference between sets. It uses different approaches depending on
+how your data is distributed like uncompressed bitmaps or sorted arrays.</p>
+
+<p>The way this is done is by dividing the data into chunks of 2^16 integers and
+using a different strategy for each chunk depending on the data distribution.</p>
+
+<p>An interesting detail is that by having these small chunks we can fit some of
+them into the L1 CPU cache of most processors, granting extra performance to our
+operations.</p>
+
+
+		
 	</div>
-	
-	<div class="pagination"><span>1</span>
+
+	<div class="pagination">
+		<a href="/posts/base-tag/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 
