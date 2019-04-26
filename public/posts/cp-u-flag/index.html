@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				roaring bitmap &middot; Today I Learned
+				cp -u flag &middot; Today I Learned
 		</title>
 
 		
@@ -64,41 +64,35 @@
     <span>Written by</span>
         Bernardo
         <br>
-        <span>on&nbsp;</span><time datetime="2019-04-13 19:50:10 -0400 EDT">April 13, 2019</time>
+        <span>on&nbsp;</span><time datetime="2019-04-26 18:20:10 -0400 EDT">April 26, 2019</time>
 </div>
-		<h1 class="post-title">roaring bitmap</h1>
+		<h1 class="post-title">cp -u flag</h1>
 <div class="post-line"></div>
     
 
   <ul class="tags">
     
       <li class="tag">
-          <a href="https://todayilearned.dev/tags/data-structure/">data-structure</a>
+          <a href="https://todayilearned.dev/tags/bash/">bash</a>
         </li></ul>
 
 
 		
 
-		<p>TIL about <a href="http://roaringbitmap.org">roaring bitmap</a>, a hybrid data structure.</p>
+		<p>TIL about the <code>-u</code> flag for <code>cp</code>. It will only copy files that don&rsquo;t exist, or
+are newer than their existing counterparts in the destination directory.</p>
 
-<p>It&rsquo;s a data structure that is especially suited to compute the intersection,
-union and the difference between sets. It uses different approaches depending on
-how your data is distributed like uncompressed bitmaps or sorted arrays.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cp -u *.txt app_dir</code></pre></div>
 
-<p>The way this is done is by dividing the data into chunks of 2^16 integers and
-using a different strategy for each chunk depending on the data distribution.</p>
-
-<p>An interesting detail is that by having these small chunks we can fit some of
-them into the L1 CPU cache of most processors, granting extra performance to our
-operations.</p>
+<p>It&rsquo;s a nice replacement to the interactive flag (<code>-i</code>) if we know we want this
+behaviour.</p>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/posts/base-tag/" class="left arrow">&#8592;</a>
-		<a href="/posts/cp-u-flag/" class="right arrow">&#8594;</a>
+		<a href="/posts/roaring-bitmap/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
