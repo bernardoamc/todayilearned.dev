@@ -6,10 +6,21 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Apr 2019 18:20:10 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 29 Apr 2019 08:30:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ulids</title>
+      <link>https://todayilearned.dev/posts/ulids/</link>
+      <pubDate>Mon, 29 Apr 2019 08:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/ulids/</guid>
+      <description>TIL about ULID, which stands for &amp;ldquo;Universally Unique Lexicographically Sortable Identifier&amp;rdquo;. Like UUID, ULID have 128 bits but are represented as a 26 character string, as opposed to 36.
+An ULID is composed of a timestamp + random sequence of bits:
+01AN4Z07BY 79KA1307SR9X4MV3 |----------| |----------------| Timestamp Randomness 48bits 80bits  It gives the system the possibility of sorting identifiers unlike UUIDs, but still makes it difficult to guess an identifier and the amount of resources our system has, which are two potential problems of using sequential ids.</description>
+    </item>
     
     <item>
       <title>cp -u flag</title>

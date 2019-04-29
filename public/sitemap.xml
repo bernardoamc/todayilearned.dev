@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/ulids/</loc>
+    <lastmod>2019-04-29T08:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/cp-u-flag/</loc>
     <lastmod>2019-04-26T18:20:10-04:00</lastmod>
   </url>
@@ -131,7 +136,7 @@
   
   <url>
     <loc>https://todayilearned.dev/tags/data-structure/</loc>
-    <lastmod>2019-04-13T19:50:10-04:00</lastmod>
+    <lastmod>2019-04-29T08:30:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -149,7 +154,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-04-26T18:20:10-04:00</lastmod>
+    <lastmod>2019-04-29T08:30:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -179,7 +184,7 @@
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-04-26T18:20:10-04:00</lastmod>
+    <lastmod>2019-04-29T08:30:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
