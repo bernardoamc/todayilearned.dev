@@ -61,6 +61,22 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/webpack-tree-shaking/" class="catalogue-item">
+    <div>
+        <time datetime="2019-05-01 18:50:00 -0400 EDT" class="catalogue-time">May 1, 2019</time>
+        <h1 class="catalogue-title">webpack tree shaking</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about tree shaking in webpack as a way to eliminate dead code.
+The way this is accomplished is by using the sideEffects package.json property.
+{ &#34;name&#34;: &#34;your-project&#34;, &#34;sideEffects&#34;: false }  &quot;sideEffects&quot;: false in this context means that our code doesn&rsquo;t have special behaviour when imported other than exposing one or more exports. If that&rsquo;s not the case we can whitelist these special files:
+{ &#34;name&#34;: &#34;your-project&#34;, &#34;sideEffects&#34;: [ &#34;.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/ulids/" class="catalogue-item">
     <div>
         <time datetime="2019-04-29 08:30:10 -0400 EDT" class="catalogue-time">April 29, 2019</time>
@@ -187,21 +203,6 @@ require &#34;open-uri&#34; irb(main):001:0&gt; require &#39;open-uri&#39; =&gt; 
         <p>
             TIL about the scroll-behavior CSS property. It sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.
 scroll-behavior: smooth; A working example can be found here.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/rename/" class="catalogue-item">
-    <div>
-        <time datetime="2019-03-24 16:25:10 -0400 EDT" class="catalogue-time">March 24, 2019</time>
-        <h1 class="catalogue-title">rename</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the rename command utility. It allows us to rename files using a Perl Common Regular Expression. Suppose we have the following files:
-$ ls temp1.txt	temp2.txt	temp3.txt Now we want to rename our files from temp to final, but are not really sure how to craft our regular expression. In this case we can use the -n flag:
-$ rename -n &#39;s/temp/final/&#39; *.txt &#39;temp1.txt&#39; would be renamed to &#39;final1.
         </p>
     </div>
 </a>

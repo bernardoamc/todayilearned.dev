@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				webpack tree shaking &middot; Today I Learned
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-05-01 18:50:00 -0400 EDT">May 1, 2019</time>
+</div>
+		<h1 class="post-title">webpack tree shaking</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/javascript/">javascript</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about <a href="https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking/">tree shaking</a>
+in <a href="https://webpack.js.org/guides/tree-shaking/">webpack</a> as a way to eliminate
+dead code.</p>
+
+<p>The way this is accomplished is by using the <code>sideEffects</code> package.json property.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
+  <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;your-project&#34;</span>,
+  <span style="color:#e6db74">&#34;sideEffects&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+}
+</code></pre></div>
+
+<p><code>&quot;sideEffects&quot;: false</code> in this context means that our code doesn&rsquo;t have
+special behaviour when imported other than exposing one or more exports.
+If that&rsquo;s not the case we can whitelist these special files:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
+  <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;your-project&#34;</span>,
+  <span style="color:#e6db74">&#34;sideEffects&#34;</span><span style="color:#f92672">:</span> [
+    <span style="color:#e6db74">&#34;./src/file-with-side-effect.js&#34;</span>
+  ]
+}
+</code></pre></div>
+
+<p>For more options <a href="https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free">refer to the documentation</a>.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/ulids/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>
