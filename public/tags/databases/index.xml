@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Databases on Today I Learned</title>
+    <link>https://todayilearned.dev/tags/databases/</link>
+    <description>Recent content in Databases on Today I Learned</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 May 2019 15:30:10 -0400</lastBuildDate>
+    
+	<atom:link href="https://todayilearned.dev/tags/databases/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ramdisk tests</title>
+      <link>https://todayilearned.dev/posts/ramdisk-tests/</link>
+      <pubDate>Sat, 04 May 2019 15:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/ramdisk-tests/</guid>
+      <description>TIL about running tests through a spawned database instance off a RAM disk. This has been applied for a long time, but completely flew under my radar. An early example of this setup with Rails and MySQL can be seen here.
+The idea is to make your test database’s storage live in memory instead of on-disk since it makes for faster reads and writes, even when considering the use of SSD.</description>
+    </item>
+    
+  </channel>
+</rss>
