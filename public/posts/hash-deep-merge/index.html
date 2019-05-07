@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				ramdisk tests &middot; Today I Learned
+				hash-deep-merge &middot; Today I Learned
 		</title>
 
 		
@@ -64,39 +64,39 @@
     <span>Written by</span>
         Bernardo
         <br>
-        <span>on&nbsp;</span><time datetime="2019-05-04 15:30:10 -0400 EDT">May 4, 2019</time>
+        <span>on&nbsp;</span><time datetime="2019-05-07 12:50:45 -0400 EDT">May 7, 2019</time>
 </div>
-		<h1 class="post-title">ramdisk tests</h1>
+		<h1 class="post-title">hash-deep-merge</h1>
 <div class="post-line"></div>
     
 
   <ul class="tags">
     
       <li class="tag">
-          <a href="https://todayilearned.dev/tags/databases/">databases</a>
-        </li>
-      <li class="tag">
-          <a href="https://todayilearned.dev/tags/testing/">testing</a>
+          <a href="https://todayilearned.dev/tags/ruby/">ruby</a>
         </li></ul>
 
 
 		
 
-		<p>TIL about running tests through a spawned database instance off a RAM disk. This
-has been applied for a long time, but completely flew under my radar. An early
-example of this setup with Rails and MySQL can be seen <a href="https://github.com/mezis/mrd">here</a>.</p>
+		<p>TIL that <code>Hash#deep_merge</code> accepts a block in which you can specify how values
+from the same <code>key</code> should be merged:</p>
 
-<p>The idea is to make your test database’s storage live in memory instead of
-on-disk since it makes for faster reads and writes, even when considering the
-use of SSD.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h1 <span style="color:#f92672">=</span> { <span style="color:#e6db74">a</span>: { <span style="color:#e6db74">b</span>: <span style="color:#ae81ff">1</span> }, <span style="color:#e6db74">c</span>: <span style="color:#ae81ff">2</span>}
+h2 <span style="color:#f92672">=</span> { <span style="color:#e6db74">a</span>: { <span style="color:#e6db74">d</span>: <span style="color:#ae81ff">3</span> }, <span style="color:#e6db74">c</span>: <span style="color:#ae81ff">4</span>}
+
+h1<span style="color:#f92672">.</span>deep_merge(h2)
+<span style="color:#75715e"># =&gt; { a: { b: 1, d: 3 }, c: 4 }</span>
+
+h1<span style="color:#f92672">.</span>deep_merge(h2) { <span style="color:#f92672">|</span>k, v1, v2<span style="color:#f92672">|</span> v1 <span style="color:#f92672">+</span> v2 }
+<span style="color:#75715e"># =&gt; { a: { b: 1, d: 3 }, c: 6 }</span></code></pre></div>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/posts/webpack-tree-shaking/" class="left arrow">&#8592;</a>
-		<a href="/posts/hash-deep-merge/" class="right arrow">&#8594;</a>
+		<a href="/posts/ramdisk-tests/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>

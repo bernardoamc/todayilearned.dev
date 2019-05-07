@@ -6,10 +6,20 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2019 15:30:10 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 12:50:45 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hash-deep-merge</title>
+      <link>https://todayilearned.dev/posts/hash-deep-merge/</link>
+      <pubDate>Tue, 07 May 2019 12:50:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/hash-deep-merge/</guid>
+      <description>TIL that Hash#deep_merge accepts a block in which you can specify how values from the same key should be merged:
+h1 = { a: { b: 1 }, c: 2} h2 = { a: { d: 3 }, c: 4} h1.deep_merge(h2) # =&amp;gt; { a: { b: 1, d: 3 }, c: 4 } h1.deep_merge(h2) { |k, v1, v2| v1 + v2 } # =&amp;gt; { a: { b: 1, d: 3 }, c: 6 } </description>
+    </item>
     
     <item>
       <title>ramdisk tests</title>
