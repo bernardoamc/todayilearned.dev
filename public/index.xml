@@ -6,10 +6,21 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 May 2019 18:45:10 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 08:00:45 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bsearch</title>
+      <link>https://todayilearned.dev/posts/bsearch/</link>
+      <pubDate>Wed, 15 May 2019 08:00:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/bsearch/</guid>
+      <description>TIL that we have a builtin bsearch in the Array class. It&amp;rsquo;s common for Rubyists to default to find, but as we know bsearch performs much better when we have a sorted Array.
+Let&amp;rsquo;s see an example:
+ary = [0, 4, 7, 10, 12] ary.bsearch {|x| x &amp;gt;= 4 } #=&amp;gt; 4 ary.bsearch {|x| x &amp;gt;= -1 } #=&amp;gt; 0 We can also use it to search String objects, but in this case we need to use the &amp;lt;=&amp;gt; operator in order to return -1, 0 or 1.</description>
+    </item>
     
     <item>
       <title>amdahl&#39;s law</title>

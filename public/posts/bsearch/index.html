@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				bsearch &middot; Today I Learned
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-05-15 08:00:45 -0400 EDT">May 15, 2019</time>
+</div>
+		<h1 class="post-title">bsearch</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/ruby/">ruby</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL that we have a builtin <code>bsearch</code> in the <code>Array</code> class. It&rsquo;s common for
+Rubyists to default to <code>find</code>, but as we know <code>bsearch</code> performs
+much better when we have a sorted <code>Array</code>.</p>
+
+<p>Let&rsquo;s see an example:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">ary <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span><span style="color:#f92672">]</span>
+ary<span style="color:#f92672">.</span>bsearch {<span style="color:#f92672">|</span>x<span style="color:#f92672">|</span> x <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">4</span> } <span style="color:#75715e">#=&gt; 4</span>
+ary<span style="color:#f92672">.</span>bsearch {<span style="color:#f92672">|</span>x<span style="color:#f92672">|</span> x <span style="color:#f92672">&gt;=</span>  <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> } <span style="color:#75715e">#=&gt; 0</span></code></pre></div>
+
+<p>We can also use it to search <code>String</code> objects, but in this case we need
+to use the <code>&lt;=&gt;</code> operator in order to return <code>-1</code>, <code>0</code> or <code>1</code>.
+<a href="https://stackoverflow.com/questions/827649/what-is-the-ruby-spaceship-operator">Here</a> is an explanation
+of the specifics of this operator.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">options <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Deleted&#39;</span>, <span style="color:#e6db74">&#39;Draft&#39;</span>, <span style="color:#e6db74">&#39;In Review&#39;</span>, <span style="color:#e6db74">&#39;Published&#39;</span>, <span style="color:#e6db74">&#39;Unpublished&#39;</span><span style="color:#f92672">]</span>
+options<span style="color:#f92672">.</span>bsearch { <span style="color:#f92672">|</span>option<span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;Draft&#39;</span> <span style="color:#f92672">&lt;=&gt;</span> option }  <span style="color:#75715e">#=&gt; &#39;Draft&#39;</span>
+options<span style="color:#f92672">.</span>bsearch { <span style="color:#f92672">|</span>option<span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;Random&#39;</span> <span style="color:#f92672">&lt;=&gt;</span> option } <span style="color:#75715e">#=&gt; nil</span></code></pre></div>
+
+<p>Notice that the term being compared must be on the left side.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/amdahl-law/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>

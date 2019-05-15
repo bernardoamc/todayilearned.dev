@@ -61,6 +61,21 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/safe-buffer-back-reference/" class="catalogue-item">
+    <div>
+        <time datetime="2019-04-03 11:45:45 -0400 EDT" class="catalogue-time">April 3, 2019</time>
+        <h1 class="catalogue-title">safe buffer back reference</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL back references for sub, sub!, gsub, and gsub! are finally fixed for ActiveSupport::SafeBuffer through the use of block.binding.eval.
+The behaviour being fixed is:
+&#34;foo123&#34;.html_safe.sub(/([a-z]+)([0-9]+)/) { $2 + $1 #=&gt; NoMethodError: undefined method `+&#39; for nil:NilClass } If this is confusing I recommend the following resource: Bindings in Ruby – Behind the Magic of Blocks
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/template-tag/" class="catalogue-item">
     <div>
         <time datetime="2019-04-01 09:00:00 -0400 EDT" class="catalogue-time">April 1, 2019</time>
@@ -193,21 +208,6 @@ $ tldr lsof lsof Lists open files and the corresponding processes. Note: Root pr
 The basic option has the format jot [numbers] [start_with] $ jot 3 10 10 11 12
 or if you want to generate random data: jot -r [numbers] [lower_limit] [upper_limit]
 $ jot -r 3 1 20 5 12 19 Not all of the flags are covered here, man jot does a good job explaining them.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/intersection-observer-api/" class="catalogue-item">
-    <div>
-        <time datetime="2019-03-16 09:15:00 -0400 EDT" class="catalogue-time">March 16, 2019</time>
-        <h1 class="catalogue-title">Intersection Observer API</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the Intersection Observer API. It allows us to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document&rsquo;s viewport.
-Let&rsquo;s see a small example:
-// Create the observer and pass it a callback function. // The callback will run whenever a threshold is crossed. var options = { root: document.querySelector(&#39;#scrollArea&#39;), rootMargin: &#39;0px&#39;, threshold: 1.0 } var observer = new IntersectionObserver(callback, options); // Watch this element, please: var target = document.
         </p>
     </div>
 </a>
