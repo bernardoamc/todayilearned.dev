@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/power-of-two-choices/</loc>
+    <lastmod>2019-05-17T20:50:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/bsearch/</loc>
     <lastmod>2019-05-15T08:00:45-04:00</lastmod>
   </url>
@@ -137,6 +142,12 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/algorithm/</loc>
+    <lastmod>2019-05-17T20:50:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/tags/android/</loc>
     <lastmod>2019-03-22T16:30:10-04:00</lastmod>
     <priority>0</priority>
@@ -191,7 +202,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-05-15T08:00:45-04:00</lastmod>
+    <lastmod>2019-05-17T20:50:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -215,7 +226,7 @@
   
   <url>
     <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
+    <lastmod>2019-05-17T20:50:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -227,7 +238,7 @@
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-05-15T08:00:45-04:00</lastmod>
+    <lastmod>2019-05-17T20:50:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
