@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Tags &middot; Today I Learned
+				rum index &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -57,13 +57,49 @@
 		</nav>
 
         
+
 <main>
-    <h1>Tags</h1>
-	<div class="catalogue">
-        <ul><li><a href="https://todayilearned.dev/tags/rails/">Rails</a></li><li><a href="https://todayilearned.dev/tags/ruby/">Ruby</a></li><li><a href="https://todayilearned.dev/tags/security/">Security</a></li><li><a href="https://todayilearned.dev/tags/testing/">Testing</a></li><li><a href="https://todayilearned.dev/tags/vim/">Vim</a></li></ul>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-05-22 21:30:10 -0400 EDT">May 22, 2019</time>
+</div>
+		<h1 class="post-title">rum index</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/databases/">databases</a>
+        </li>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/postgres/">postgres</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about the <a href="https://github.com/postgrespro/rum">RUM index</a> extension in PostgreSQL.
+It is a variant of the <a href="https://www.postgresql.org/docs/devel/gin-intro.html">GIN index</a>
+that stores additional information in the posting tree like lexemes position and
+timestamps. This solves known <code>GIN</code> problems like slow ranking and phrase
+searching.</p>
+
+<p>The drawback of course is that this additional information incurs extra build
+and insert time, making it not ideal for tables that change often.</p>
+
+
+		
 	</div>
-	
-	<div class="pagination"><a href="/tags/" class="left arrow">&#8592;</a><span>2</span>
+
+	<div class="pagination">
+		<a href="/posts/power-of-two-choices/" class="left arrow">&#8592;</a>
+		<a href="/posts/async-run/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 

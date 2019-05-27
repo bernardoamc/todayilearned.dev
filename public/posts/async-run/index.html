@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				power of two choices &middot; Today I Learned
+				async run &middot; Today I Learned
 		</title>
 
 		
@@ -64,42 +64,41 @@
     <span>Written by</span>
         Bernardo
         <br>
-        <span>on&nbsp;</span><time datetime="2019-05-17 20:50:10 -0400 EDT">May 17, 2019</time>
+        <span>on&nbsp;</span><time datetime="2019-05-27 19:00:10 -0400 EDT">May 27, 2019</time>
 </div>
-		<h1 class="post-title">power of two choices</h1>
+		<h1 class="post-title">async run</h1>
 <div class="post-line"></div>
     
 
   <ul class="tags">
     
       <li class="tag">
-          <a href="https://todayilearned.dev/tags/algorithm/">algorithm</a>
+          <a href="https://todayilearned.dev/tags/vim/">vim</a>
         </li></ul>
 
 
 		
 
-		<p>TIL about the <a href="https://www.eecs.harvard.edu/~michaelm/postscripts/tpds2001.pdf">Power of Two Choices</a>
-algorithm used in load balancing, queuing theory and distributed systems in
-general.</p>
+		<p>TIL about <a href="https://github.com/skywind3000/asyncrun.vim">async run</a> to run shell
+commands asynchronously in Vim 8 or NeoVim. The output of the shell command can
+be read in real time using the <code>quickfix</code> window. Let&rsquo;s see an example:</p>
 
-<p>The main takeaway is that it is better to pick two queues at random and
-choose the one with the least amount of work than finding the best queue
-and sending a workload there. Why? If we are dealing with many decision makers
-(as in distributed load balancers for example) and each one choose the best
-queue disregarding each other choices then all their choices will go to the
-same queue, overwhelming it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; Running the command asynchronously</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">AsyncRun</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">master</span><span style="color:#75715e">
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">&#34; Opening the quickfix window</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">copen</span></code></pre></div>
 
-<p>NGINX implements this algorithm for their load balancers for example, <a href="https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/">check it
-out</a>!</p>
+<p>An interesting option is to set <code>g:asyncrun_open</code> with a value like <code>8</code> to open
+the <code>quickfix</code> window automatically with a certain height when an asynchronous
+command is running.</p>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/posts/bsearch/" class="left arrow">&#8592;</a>
-		<a href="/posts/rum-index/" class="right arrow">&#8594;</a>
+		<a href="/posts/rum-index/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
