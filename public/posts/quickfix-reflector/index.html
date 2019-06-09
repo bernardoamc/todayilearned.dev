@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Vim &middot; Today I Learned
+				async run &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/vim/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -59,41 +59,43 @@
         
 
 <main>
-  <div class="posts">
-    <div class="selected-tag">
-      <h1>Vim</h1>
-    </div>
-
-    
-      <div class="post-by-tag">
-          <time datetime="2019-06-08 22:45:10 -0400 EDT">June 8, 2019</time>:&nbsp;
-
-        <a href="/posts/quickfix-reflector/">async run</a>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
         <br>
-      </div>
+        <span>on&nbsp;</span><time datetime="2019-06-08 22:45:10 -0400 EDT">June 8, 2019</time>
+</div>
+		<h1 class="post-title">async run</h1>
+<div class="post-line"></div>
     
-      <div class="post-by-tag">
-          <time datetime="2019-05-27 19:00:10 -0400 EDT">May 27, 2019</time>:&nbsp;
 
-        <a href="/posts/async-run/">async run</a>
-        <br>
-      </div>
+  <ul class="tags">
     
-      <div class="post-by-tag">
-          <time datetime="2019-03-11 17:00:10 -0400 EDT">March 11, 2019</time>:&nbsp;
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/vim/">vim</a>
+        </li></ul>
 
-        <a href="/posts/vim-normal-command/">Vim :normal</a>
-        <br>
-      </div>
-    
-      <div class="post-by-tag">
-          <time datetime="2019-03-10 20:25:10 -0400 EDT">March 10, 2019</time>:&nbsp;
 
-        <a href="/posts/vim-repeat-substitute/">Vim Repeat Substitute</a>
-        <br>
-      </div>
-    
-  </div>
+		
+
+		<p>TIL about <a href="https://github.com/stefandtw/quickfix-reflector.vim">quickfix-reflector</a> to
+make the quickfix window modifiable. I&rsquo;ve been using it in conjunction with plugins
+like <code>fzf.vim</code> and <code>async-run</code> that writes to the quickfix window, after that the
+plugin makes commands like <code>:w</code> and <code>:x</code> reflect the action to every file listed
+in the quickfix window. It&rsquo;s a great plugin to enable search and replace,
+allowing things like replacing words through regular expressions across files
+in a very convenient way.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/async-run/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
 </main>
 
 
