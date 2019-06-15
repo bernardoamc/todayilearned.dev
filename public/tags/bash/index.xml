@@ -6,10 +6,20 @@
     <description>Recent content in Bash on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Apr 2019 18:20:10 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 20:35:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>uuencode</title>
+      <link>https://todayilearned.dev/posts/uuencode/</link>
+      <pubDate>Fri, 14 Jun 2019 20:35:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/uuencode/</guid>
+      <description>TIL about the uuencode and uudecode command utilities. It allows us to decode and encode binary files respectively.
+$ echo &amp;#39;foo&amp;#39; | uuencode -o my_binary my_binary $ file my_binary my_binary: uuencoded or xxencoded text, ASCII text $ cat my_binary begin 644 my_binary $9F]O&amp;#34;@`` ` end $uudecode my_binary $cat my_binary foo </description>
+    </item>
     
     <item>
       <title>cp -u flag</title>

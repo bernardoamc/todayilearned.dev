@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Bash &middot; Today I Learned
+				uuencode &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/bash/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -59,62 +59,51 @@
         
 
 <main>
-  <div class="posts">
-    <div class="selected-tag">
-      <h1>Bash</h1>
-    </div>
-
-    
-      <div class="post-by-tag">
-          <time datetime="2019-06-14 20:35:10 -0400 EDT">June 14, 2019</time>:&nbsp;
-
-        <a href="/posts/uuencode/">uuencode</a>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
         <br>
-      </div>
+        <span>on&nbsp;</span><time datetime="2019-06-14 20:35:10 -0400 EDT">June 14, 2019</time>
+</div>
+		<h1 class="post-title">uuencode</h1>
+<div class="post-line"></div>
     
-      <div class="post-by-tag">
-          <time datetime="2019-04-26 18:20:10 -0400 EDT">April 26, 2019</time>:&nbsp;
 
-        <a href="/posts/cp-u-flag/">cp -u flag</a>
-        <br>
-      </div>
+  <ul class="tags">
     
-      <div class="post-by-tag">
-          <time datetime="2019-03-24 16:25:10 -0400 EDT">March 24, 2019</time>:&nbsp;
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/bash/">bash</a>
+        </li></ul>
 
-        <a href="/posts/rename/">rename</a>
-        <br>
-      </div>
-    
-      <div class="post-by-tag">
-          <time datetime="2019-03-18 07:50:10 -0400 EDT">March 18, 2019</time>:&nbsp;
 
-        <a href="/posts/tldr-pages/">tldr pages</a>
-        <br>
-      </div>
-    
-      <div class="post-by-tag">
-          <time datetime="2019-03-17 09:00:00 -0400 EDT">March 17, 2019</time>:&nbsp;
+		
 
-        <a href="/posts/jot-command/">jot command</a>
-        <br>
-      </div>
-    
-      <div class="post-by-tag">
-          <time datetime="2019-03-15 12:15:10 -0400 EDT">March 15, 2019</time>:&nbsp;
+		<p>TIL about the <code>uuencode</code> and <code>uudecode</code> command utilities. It allows us to
+decode and encode binary files respectively.</p>
 
-        <a href="/posts/at-command/">at command</a>
-        <br>
-      </div>
-    
-      <div class="post-by-tag">
-          <time datetime="2019-03-12 07:50:10 -0400 EDT">March 12, 2019</time>:&nbsp;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#e6db74">&#39;foo&#39;</span> | uuencode -o my_binary my_binary
+$ file my_binary
+my_binary: uuencoded or xxencoded text, ASCII text
+$ cat my_binary
+begin <span style="color:#ae81ff">644</span> my_binary
+$9F<span style="color:#f92672">]</span>O<span style="color:#e6db74">&#34;@``
+</span><span style="color:#e6db74">`
+</span><span style="color:#e6db74">end
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span>$<span style="color:#e6db74"> uudecode my_binary
+</span><span style="color:#e6db74"></span>$<span style="color:#e6db74"> cat my_binary
+</span><span style="color:#e6db74">foo</span></code></pre></div>
 
-        <a href="/posts/ps-option/">The ps -o flag</a>
-        <br>
-      </div>
-    
-  </div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/quickfix-reflector/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
 </main>
 
 

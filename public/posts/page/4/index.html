@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				async run &middot; Today I Learned
+				Posts &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="https://todayilearned.dev/posts/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -59,43 +59,32 @@
         
 
 <main>
-	<div class="post">
-		<div class="post-info">
-    <span>Written by</span>
-        Bernardo
-        <br>
-        <span>on&nbsp;</span><time datetime="2019-06-08 22:45:10 -0400 EDT">June 8, 2019</time>
-</div>
-		<h1 class="post-title">async run</h1>
-<div class="post-line"></div>
-    
-
-  <ul class="tags">
-    
-      <li class="tag">
-          <a href="https://todayilearned.dev/tags/vim/">vim</a>
-        </li></ul>
-
-
+	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/vim-repeat-substitute/" class="catalogue-item">
+    <div>
+        <time datetime="2019-03-10 20:25:10 -0400 EDT" class="catalogue-time">March 10, 2019</time>
+        <h1 class="catalogue-title">Vim Repeat Substitute</h1>
+        <div class="catalogue-line"></div>
 
-		<p>TIL about <a href="https://github.com/stefandtw/quickfix-reflector.vim">quickfix-reflector</a> to
-make the quickfix window modifiable. I&rsquo;ve been using it in conjunction with plugins
-like <code>fzf.vim</code> and <code>async-run</code> that writes to the quickfix window, after that the
-plugin makes commands like <code>:w</code> and <code>:x</code> reflect the action to every file listed
-in the quickfix window. It&rsquo;s a great plugin to enable search and replace,
-allowing things like replacing words through regular expressions across files
-in a very convenient way.</p>
-
+        <p>
+            TIL about the &amp; command in Vim and how it can be used to repeat the last search and replace pattern.
+Let&rsquo;s see how this works with a quick example. Suppose we have a file like the following:
+rock paper scissors rock paper scissors rock paper scissors And you want to replace the word rock with lizard just in the lines one and three (don&rsquo;t ask me why). Normally I would do something like:
+        </p>
+    </div>
+</a>
 
 		
 	</div>
-
+	
 	<div class="pagination">
-		<a href="/posts/async-run/" class="left arrow">&#8592;</a>
-		<a href="/posts/uuencode/" class="right arrow">&#8594;</a>
-
-		<a href="#" class="top">Top</a>
+		
+			<a href="/posts/page/3/" class="left arrow">&#8592;</a>
+		
+		
+	
+		<span>4</span>
 	</div>
 </main>
 
