@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/tuntap/</loc>
+    <lastmod>2019-06-16T20:35:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/uuencode/</loc>
     <lastmod>2019-06-14T20:35:10-04:00</lastmod>
   </url>
@@ -221,6 +226,12 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/kernel/</loc>
+    <lastmod>2019-06-16T20:35:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/tags/postgres/</loc>
     <lastmod>2019-05-22T21:30:10-04:00</lastmod>
     <priority>0</priority>
@@ -228,7 +239,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-06-14T20:35:10-04:00</lastmod>
+    <lastmod>2019-06-16T20:35:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -264,7 +275,7 @@
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-06-14T20:35:10-04:00</lastmod>
+    <lastmod>2019-06-16T20:35:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Tags &middot; Today I Learned
+				tuntap &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -57,13 +57,46 @@
 		</nav>
 
         
+
 <main>
-    <h1>Tags</h1>
-	<div class="catalogue">
-        <ul><li><a href="https://todayilearned.dev/tags/algorithm/">Algorithm</a></li><li><a href="https://todayilearned.dev/tags/android/">Android</a></li><li><a href="https://todayilearned.dev/tags/bash/">Bash</a></li><li><a href="https://todayilearned.dev/tags/computer-architecture/">Computer Architecture</a></li><li><a href="https://todayilearned.dev/tags/css/">Css</a></li><li><a href="https://todayilearned.dev/tags/data-structure/">Data Structure</a></li><li><a href="https://todayilearned.dev/tags/databases/">Databases</a></li><li><a href="https://todayilearned.dev/tags/html/">Html</a></li><li><a href="https://todayilearned.dev/tags/javascript/">Javascript</a></li><li><a href="https://todayilearned.dev/tags/kernel/">Kernel</a></li></ul>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-06-16 20:35:10 -0400 EDT">June 16, 2019</time>
+</div>
+		<h1 class="post-title">tuntap</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/kernel/">kernel</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about <code>tuntap</code> as a way to create virtual network kernel interfaces. They are
+network devices supported entirely in software. While <code>tun</code> is used to simulate
+a network layer which operates with packets like IP packets, <code>tap</code> is used to
+simulate a link layer, operating with packets like Ethernet frames. Examples of
+applications are <code>OpenSSH</code> and <code>Hamachi</code>. Example of <code>tun</code> usage:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ip tuntap add mode tun tun0
+$ sudo ip link set tun0 up
+$ sudo ip addr add <span style="color:#ae81ff">192</span>.168.1.1/24 dev tun0</code></pre></div>
+
+
+		
 	</div>
-	
-	<div class="pagination"><a href="/tags/page/2/" class="right arrow">&#8594;</a><span>1</span>
+
+	<div class="pagination">
+		<a href="/posts/uuencode/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 

@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/tuntap/" class="catalogue-item">
+    <div>
+        <time datetime="2019-06-16 20:35:10 -0400 EDT" class="catalogue-time">June 16, 2019</time>
+        <h1 class="catalogue-title">tuntap</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about tuntap as a way to create virtual network kernel interfaces. They are network devices supported entirely in software. While tun is used to simulate a network layer which operates with packets like IP packets, tap is used to simulate a link layer, operating with packets like Ethernet frames. Examples of applications are OpenSSH and Hamachi. Example of tun usage:
+$ sudo ip tuntap add mode tun tun0 $ sudo ip link set tun0 up $ sudo ip addr add 192.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/uuencode/" class="catalogue-item">
     <div>
         <time datetime="2019-06-14 20:35:10 -0400 EDT" class="catalogue-time">June 14, 2019</time>
@@ -183,22 +197,6 @@ h1 = { a: { b: 1 }, c: 2} h2 = { a: { d: 3 }, c: 4} h1.deep_merge(h2) # =&gt; { 
         <p>
             TIL about running tests through a spawned database instance off a RAM disk. This has been applied for a long time, but completely flew under my radar. An early example of this setup with Rails and MySQL can be seen here.
 The idea is to make your test database’s storage live in memory instead of on-disk since it makes for faster reads and writes, even when considering the use of SSD.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/webpack-tree-shaking/" class="catalogue-item">
-    <div>
-        <time datetime="2019-05-01 18:50:00 -0400 EDT" class="catalogue-time">May 1, 2019</time>
-        <h1 class="catalogue-title">webpack tree shaking</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about tree shaking in webpack as a way to eliminate dead code.
-The way this is accomplished is by using the sideEffects package.json property.
-{ &#34;name&#34;: &#34;your-project&#34;, &#34;sideEffects&#34;: false }  &quot;sideEffects&quot;: false in this context means that our code doesn&rsquo;t have special behaviour when imported other than exposing one or more exports. If that&rsquo;s not the case we can whitelist these special files:
-{ &#34;name&#34;: &#34;your-project&#34;, &#34;sideEffects&#34;: [ &#34;.
         </p>
     </div>
 </a>
