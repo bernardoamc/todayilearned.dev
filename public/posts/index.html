@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/cuckoo-filter/" class="catalogue-item">
+    <div>
+        <time datetime="2019-06-24 09:00:10 -0400 EDT" class="catalogue-time">June 24, 2019</time>
+        <h1 class="catalogue-title">cuckoo filter</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about cuckoo filter, a similar algorithm to bloom filters. Both algorithms support fast set membership testing, but cuckoo filters expand on this concept by providing limited counting, deletion and a bounded false positive probability while maintaining a similar space complexity.
+cuckoo filters do not play nice with concurrency.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/tuntap/" class="catalogue-item">
     <div>
         <time datetime="2019-06-16 20:35:10 -0400 EDT" class="catalogue-time">June 16, 2019</time>
@@ -183,20 +197,6 @@ It has a few implications:
         <p>
             TIL that Hash#deep_merge accepts a block in which you can specify how values from the same key should be merged:
 h1 = { a: { b: 1 }, c: 2} h2 = { a: { d: 3 }, c: 4} h1.deep_merge(h2) # =&gt; { a: { b: 1, d: 3 }, c: 4 } h1.deep_merge(h2) { |k, v1, v2| v1 + v2 } # =&gt; { a: { b: 1, d: 3 }, c: 6 } 
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/ramdisk-tests/" class="catalogue-item">
-    <div>
-        <time datetime="2019-05-04 15:30:10 -0400 EDT" class="catalogue-time">May 4, 2019</time>
-        <h1 class="catalogue-title">ramdisk tests</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about running tests through a spawned database instance off a RAM disk. This has been applied for a long time, but completely flew under my radar. An early example of this setup with Rails and MySQL can be seen here.
-The idea is to make your test database’s storage live in memory instead of on-disk since it makes for faster reads and writes, even when considering the use of SSD.
         </p>
     </div>
 </a>

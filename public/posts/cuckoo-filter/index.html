@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Algorithm &middot; Today I Learned
+				cuckoo filter &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/algorithm/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -59,27 +59,44 @@
         
 
 <main>
-  <div class="posts">
-    <div class="selected-tag">
-      <h1>Algorithm</h1>
-    </div>
-
-    
-      <div class="post-by-tag">
-          <time datetime="2019-06-24 09:00:10 -0400 EDT">June 24, 2019</time>:&nbsp;
-
-        <a href="/posts/cuckoo-filter/">cuckoo filter</a>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
         <br>
-      </div>
+        <span>on&nbsp;</span><time datetime="2019-06-24 09:00:10 -0400 EDT">June 24, 2019</time>
+</div>
+		<h1 class="post-title">cuckoo filter</h1>
+<div class="post-line"></div>
     
-      <div class="post-by-tag">
-          <time datetime="2019-05-17 20:50:10 -0400 EDT">May 17, 2019</time>:&nbsp;
 
-        <a href="/posts/power-of-two-choices/">power of two choices</a>
-        <br>
-      </div>
+  <ul class="tags">
     
-  </div>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/algorithm/">algorithm</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about <a href="https://en.wikipedia.org/wiki/Cuckoo_filter">cuckoo filter</a>, a
+similar algorithm to <a href="https://en.wikipedia.org/wiki/Bloom_filter">bloom
+filters</a>. Both algorithms support
+fast set membership testing, but <code>cuckoo filters</code> expand on this concept by
+providing limited counting, deletion and a bounded false positive probability
+while maintaining a similar space complexity.</p>
+
+<p><code>cuckoo filters</code> <strong>do not</strong> play nice with concurrency.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/tuntap/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
 </main>
 
 
