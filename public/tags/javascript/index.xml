@@ -6,10 +6,22 @@
     <description>Recent content in Javascript on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 May 2019 18:50:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2019 09:15:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Console Group</title>
+      <link>https://todayilearned.dev/posts/console-group/</link>
+      <pubDate>Sat, 29 Jun 2019 09:15:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/console-group/</guid>
+      <description>TIL about the console.group command used to create a new inline group in the Web Console log. It is used in order to create nesting in your console logs.
+Let&amp;rsquo;s see an example:
+console.log(&amp;#34;This is the outer level&amp;#34;); console.group(); console.log(&amp;#34;Level 2&amp;#34;); console.group(); console.log(&amp;#34;Level 3&amp;#34;); console.warn(&amp;#34;More of level 3&amp;#34;); console.groupEnd(); console.log(&amp;#34;Back to level 2&amp;#34;); console.groupEnd(); console.log(&amp;#34;Back to the outer level&amp;#34;);  The generated log will be the following:
+&amp;#34;This is the outer level&amp;#34; &amp;#34;Level 2&amp;#34; &amp;#34;Level 3&amp;#34; &amp;#34;More of level 3&amp;#34; &amp;#34;Back to level 2&amp;#34; &amp;#34;Back to the outer level&amp;#34;  </description>
+    </item>
     
     <item>
       <title>webpack tree shaking</title>

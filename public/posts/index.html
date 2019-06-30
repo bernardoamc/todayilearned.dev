@@ -61,6 +61,22 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/console-group/" class="catalogue-item">
+    <div>
+        <time datetime="2019-06-29 09:15:00 -0400 EDT" class="catalogue-time">June 29, 2019</time>
+        <h1 class="catalogue-title">Console Group</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the console.group command used to create a new inline group in the Web Console log. It is used in order to create nesting in your console logs.
+Let&rsquo;s see an example:
+console.log(&#34;This is the outer level&#34;); console.group(); console.log(&#34;Level 2&#34;); console.group(); console.log(&#34;Level 3&#34;); console.warn(&#34;More of level 3&#34;); console.groupEnd(); console.log(&#34;Back to level 2&#34;); console.groupEnd(); console.log(&#34;Back to the outer level&#34;);  The generated log will be the following:
+&#34;This is the outer level&#34; &#34;Level 2&#34; &#34;Level 3&#34; &#34;More of level 3&#34; &#34;Back to level 2&#34; &#34;Back to the outer level&#34;  
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/cuckoo-filter/" class="catalogue-item">
     <div>
         <time datetime="2019-06-24 09:00:10 -0400 EDT" class="catalogue-time">June 24, 2019</time>
@@ -183,20 +199,6 @@ ary = [0, 4, 7, 10, 12] ary.bsearch {|x| x &gt;= 4 } #=&gt; 4 ary.bsearch {|x| x
             TIL about Amdahl&rsquo;s Law as a way to measure the result of a given optimization. It&rsquo;s especially useful to compare different optimizations and see the maximum performance each optimization provides for your system. Another cool thing is that Amdahl&rsquo;s Law works for parallel or serial programs.
 It has a few implications:
  Make the common case fast Optimizations wil have less and less effects (Law of diminishing returns)  Here&rsquo;s an interesting video about it.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/hash-deep-merge/" class="catalogue-item">
-    <div>
-        <time datetime="2019-05-07 12:50:45 -0400 EDT" class="catalogue-time">May 7, 2019</time>
-        <h1 class="catalogue-title">hash-deep-merge</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL that Hash#deep_merge accepts a block in which you can specify how values from the same key should be merged:
-h1 = { a: { b: 1 }, c: 2} h2 = { a: { d: 3 }, c: 4} h1.deep_merge(h2) # =&gt; { a: { b: 1, d: 3 }, c: 4 } h1.deep_merge(h2) { |k, v1, v2| v1 + v2 } # =&gt; { a: { b: 1, d: 3 }, c: 6 } 
         </p>
     </div>
 </a>
