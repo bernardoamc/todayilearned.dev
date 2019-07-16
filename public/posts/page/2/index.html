@@ -61,6 +61,21 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/amdahl-law/" class="catalogue-item">
+    <div>
+        <time datetime="2019-05-09 18:45:10 -0400 EDT" class="catalogue-time">May 9, 2019</time>
+        <h1 class="catalogue-title">amdahl&#39;s law</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about Amdahl&rsquo;s Law as a way to measure the result of a given optimization. It&rsquo;s especially useful to compare different optimizations and see the maximum performance each optimization provides for your system. Another cool thing is that Amdahl&rsquo;s Law works for parallel or serial programs.
+It has a few implications:
+ Make the common case fast Optimizations wil have less and less effects (Law of diminishing returns)  Here&rsquo;s an interesting video about it.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/hash-deep-merge/" class="catalogue-item">
     <div>
         <time datetime="2019-05-07 12:50:45 -0400 EDT" class="catalogue-time">May 7, 2019</time>
@@ -187,22 +202,6 @@ The way this is done is by dividing the data into chunks of 2^16 integers and us
             TIL back references for sub, sub!, gsub, and gsub! are finally fixed for ActiveSupport::SafeBuffer through the use of block.binding.eval.
 The behaviour being fixed is:
 &#34;foo123&#34;.html_safe.sub(/([a-z]+)([0-9]+)/) { $2 + $1 #=&gt; NoMethodError: undefined method `+&#39; for nil:NilClass } If this is confusing I recommend the following resource: Bindings in Ruby – Behind the Magic of Blocks
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/template-tag/" class="catalogue-item">
-    <div>
-        <time datetime="2019-04-01 09:00:00 -0400 EDT" class="catalogue-time">April 1, 2019</time>
-        <h1 class="catalogue-title">template tag</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the template tag. It&rsquo;s used to hold client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.
-Let&rsquo;s see some client side input without the template tag:
-let container = document.createElement(&#39;div&#39;); // This will trigger the alert  container.innerHTML = &#34;&lt;img src=x onerror=alert(1)&gt;&#34;  Now let&rsquo;s use the &lt;template&gt; tag:
-let container = document.createElement(&#39;template&#39;); // Alert NOT triggered  container.
         </p>
     </div>
 </a>

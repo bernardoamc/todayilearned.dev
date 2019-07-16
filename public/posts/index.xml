@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 09:15:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 09:00:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>merkle tree</title>
+      <link>https://todayilearned.dev/posts/merkle-tree/</link>
+      <pubDate>Mon, 15 Jul 2019 09:00:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/merkle-tree/</guid>
+      <description>TIL about the merkle tree data structure, a tree structure in which each leaf node is a hash of a block of data, and each non-leaf node is a hash of its children.
+Label ROOT Value H(H01 + H23) / \ Label [H01] [H23] Value H(H0 + H1) H(H2 + H3) / \ / \ Label [H0] [H1] [H2] [H3] Value H(A) H(B) H(C) H(D) | | | | A B C D It&amp;rsquo;s mostly used in distributed systems for efficient data verification since it only depends on hashes instead of full files.</description>
+    </item>
     
     <item>
       <title>Console Group</title>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				merkle tree &middot; Today I Learned
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-07-15 09:00:10 -0400 EDT">July 15, 2019</time>
+</div>
+		<h1 class="post-title">merkle tree</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/data-structure/">data-structure</a>
+        </li>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/cryptography/">cryptography</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about the <a href="https://en.wikipedia.org/wiki/Merkle_tree">merkle tree</a> data
+structure, a tree structure in which each leaf node is a hash of a block of
+data, and each non-leaf node is a hash of its children.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Label              ROOT
+Value           H(H01 + H23)
+                 /        \
+Label       [H01]         [H23]
+Value    H(H0 + H1)     H(H2 + H3)
+           /     \        /     \
+Label    [H0]   [H1]    [H2]   [H3]
+Value    H(A)   H(B)    H(C)   H(D)
+           |      |       |      |
+           A      B       C      D</code></pre></div>
+
+<p>It&rsquo;s mostly used in <code>distributed systems</code> for efficient <code>data verification</code> since it
+only depends on hashes instead of full files. Bitcoin and Ethereum makes full
+use of this data structure with variations like the <a href="https://github.com/ethereum/wiki/wiki/Patricia-Tree">Merkle Patricia
+Tree</a>.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/console-group/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>
