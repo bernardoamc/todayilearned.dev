@@ -61,6 +61,19 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/curl-data/" class="catalogue-item">
+    <div>
+        <time datetime="2019-08-02 22:00:00 -0400 EDT" class="catalogue-time">August 2, 2019</time>
+        <h1 class="catalogue-title">curl data</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL that curl --data and curl --data-binary when used with a @filename outputs a different result. The most common one being that --data will strip newlines from the file but --data-binary will not.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/vim-percentage-navigation/" class="catalogue-item">
     <div>
         <time datetime="2019-07-26 17:30:10 -0400 EDT" class="catalogue-time">July 26, 2019</time>
@@ -182,20 +195,6 @@ $ echo &#39;foo&#39; | uuencode -o my_binary my_binary $ file my_binary my_binar
         <p>
             TIL about the RUM index extension in PostgreSQL. It is a variant of the GIN index that stores additional information in the posting tree like lexemes position and timestamps. This solves known GIN problems like slow ranking and phrase searching.
 The drawback of course is that this additional information incurs extra build and insert time, making it not ideal for tables that change often.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/power-of-two-choices/" class="catalogue-item">
-    <div>
-        <time datetime="2019-05-17 20:50:10 -0400 EDT" class="catalogue-time">May 17, 2019</time>
-        <h1 class="catalogue-title">power of two choices</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the Power of Two Choices algorithm used in load balancing, queuing theory and distributed systems in general.
-The main takeaway is that it is better to pick two queues at random and choose the one with the least amount of work than finding the best queue and sending a workload there. Why? If we are dealing with many decision makers (as in distributed load balancers for example) and each one choose the best queue disregarding each other choices then all their choices will go to the same queue, overwhelming it.
         </p>
     </div>
 </a>
