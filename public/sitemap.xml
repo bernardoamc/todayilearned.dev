@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/tuntap/</loc>
+    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/curl-data/</loc>
     <lastmod>2019-08-02T22:00:00-04:00</lastmod>
   </url>
@@ -25,11 +30,6 @@
   <url>
     <loc>https://todayilearned.dev/posts/cuckoo-filter/</loc>
     <lastmod>2019-06-24T09:00:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/posts/tuntap/</loc>
-    <lastmod>2019-06-16T20:35:10-04:00</lastmod>
   </url>
   
   <url>
@@ -188,6 +188,10 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/posts/iterm-status-bar/</loc>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/topics/</loc>
   </url>
   
@@ -205,7 +209,7 @@
   
   <url>
     <loc>https://todayilearned.dev/tags/bash/</loc>
-    <lastmod>2019-08-02T22:00:00-04:00</lastmod>
+    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -251,14 +255,14 @@
   </url>
   
   <url>
-    <loc>https://todayilearned.dev/tags/javascript/</loc>
-    <lastmod>2019-06-29T09:15:00-04:00</lastmod>
+    <loc>https://todayilearned.dev/tags/iterm/</loc>
+    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://todayilearned.dev/tags/kernel/</loc>
-    <lastmod>2019-06-16T20:35:10-04:00</lastmod>
+    <loc>https://todayilearned.dev/tags/javascript/</loc>
+    <lastmod>2019-06-29T09:15:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -270,7 +274,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-08-02T22:00:00-04:00</lastmod>
+    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -306,7 +310,7 @@
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-08-02T22:00:00-04:00</lastmod>
+    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				tuntap &middot; Today I Learned
+				rename &middot; Today I Learned
 		</title>
 
 		
@@ -64,38 +64,49 @@
     <span>Written by</span>
         Bernardo
         <br>
-        <span>on&nbsp;</span><time datetime="2019-06-16 20:35:10 -0400 EDT">June 16, 2019</time>
+        <span>on&nbsp;</span><time datetime="2019-08-12 20:35:10 -0400 EDT">August 12, 2019</time>
 </div>
-		<h1 class="post-title">tuntap</h1>
+		<h1 class="post-title">rename</h1>
 <div class="post-line"></div>
     
 
   <ul class="tags">
     
       <li class="tag">
-          <a href="https://todayilearned.dev/tags/kernel/">kernel</a>
+          <a href="https://todayilearned.dev/tags/bash/">bash</a>
+        </li>
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/iterm/">iterm</a>
         </li></ul>
 
 
 		
 
-		<p>TIL about <code>tuntap</code> as a way to create virtual network kernel interfaces. They are
-network devices supported entirely in software. While <code>tun</code> is used to simulate
-a network layer which operates with packets like IP packets, <code>tap</code> is used to
-simulate a link layer, operating with packets like Ethernet frames. Examples of
-applications are <code>OpenSSH</code> and <code>Hamachi</code>. Example of <code>tun</code> usage:</p>
+		<p>TIL about the <code>status bar</code> on iTerm2. It&rsquo;s pretty useful with a mix of builtin
+components like <code>Current Directory</code> or <code>git state</code> and user defined variables or
+functions. To access and configure the status bar go to <code>Preferences &gt; Profiles &gt; Session</code>.
+Turn on <code>Status bar enabled</code> then click <code>Configure Status Bar</code>.</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ip tuntap add mode tun tun0
-$ sudo ip link set tun0 up
-$ sudo ip addr add <span style="color:#ae81ff">192</span>.168.1.1/24 dev tun0</code></pre></div>
+<p>Again,
+<a href="https://www.iterm2.com/documentation-scripting-fundamentals.html">scripting</a>
+plays a huge part in how useful the status bar is.</p>
+
+<p>As an example:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># In ~/.bash_profile</span>
+<span style="color:#66d9ef">function</span> iterm2_print_user_vars<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  iterm2_set_user_var rubyVersion <span style="color:#66d9ef">$(</span>ruby -v | awk <span style="color:#e6db74">&#39;{ print $2 }&#39;</span><span style="color:#66d9ef">)</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>And the variable can be read inside a
+<code>Custom Action &gt; Configure Component &gt; Configure Action</code> through <code>\(user.rubyVersion)</code>.</p>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/posts/uuencode/" class="left arrow">&#8592;</a>
-		<a href="/posts/cuckoo-filter/" class="right arrow">&#8594;</a>
+		<a href="/posts/curl-data/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
