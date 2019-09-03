@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/delete-word-iterm/</loc>
+    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/iterm/</loc>
+    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/bash/</loc>
+    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/tuntap/</loc>
     <lastmod>2019-08-12T20:35:10-04:00</lastmod>
   </url>
@@ -13,8 +43,23 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/vim/</loc>
+    <lastmod>2019-07-26T17:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/vim-percentage-navigation/</loc>
     <lastmod>2019-07-26T17:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/cryptography/</loc>
+    <lastmod>2019-07-15T09:00:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/data-structure/</loc>
+    <lastmod>2019-07-15T09:00:10-04:00</lastmod>
   </url>
   
   <url>
@@ -25,6 +70,16 @@
   <url>
     <loc>https://todayilearned.dev/posts/console-group/</loc>
     <lastmod>2019-06-29T09:15:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/javascript/</loc>
+    <lastmod>2019-06-29T09:15:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/algorithm/</loc>
+    <lastmod>2019-06-24T09:00:10-04:00</lastmod>
   </url>
   
   <url>
@@ -48,6 +103,16 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/databases/</loc>
+    <lastmod>2019-05-22T21:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/postgres/</loc>
+    <lastmod>2019-05-22T21:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/rum-index/</loc>
     <lastmod>2019-05-22T21:30:10-04:00</lastmod>
   </url>
@@ -63,7 +128,17 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/ruby/</loc>
+    <lastmod>2019-05-15T08:00:45-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/amdahl-law/</loc>
+    <lastmod>2019-05-09T18:45:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/computer-architecture/</loc>
     <lastmod>2019-05-09T18:45:10-04:00</lastmod>
   </url>
   
@@ -74,6 +149,11 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/ramdisk-tests/</loc>
+    <lastmod>2019-05-04T15:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/testing/</loc>
     <lastmod>2019-05-04T15:30:10-04:00</lastmod>
   </url>
   
@@ -103,13 +183,33 @@
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/html/</loc>
+    <lastmod>2019-04-08T12:45:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/css/</loc>
+    <lastmod>2019-04-05T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/prefers-color-scheme/</loc>
     <lastmod>2019-04-05T10:30:00-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://todayilearned.dev/tags/rails/</loc>
+    <lastmod>2019-04-03T11:45:45-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/safe-buffer-back-reference/</loc>
     <lastmod>2019-04-03T11:45:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/security/</loc>
+    <lastmod>2019-04-01T09:00:00-04:00</lastmod>
   </url>
   
   <url>
@@ -130,6 +230,11 @@
   <url>
     <loc>https://todayilearned.dev/posts/rename/</loc>
     <lastmod>2019-03-24T16:25:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/android/</loc>
+    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
   </url>
   
   <url>
@@ -189,6 +294,7 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/iterm-status-bar/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -196,128 +302,7 @@
   </url>
   
   <url>
-    <loc>https://todayilearned.dev/tags/algorithm/</loc>
-    <lastmod>2019-06-24T09:00:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/android/</loc>
-    <lastmod>2019-03-22T16:30:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/bash/</loc>
-    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://todayilearned.dev/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/computer-architecture/</loc>
-    <lastmod>2019-05-09T18:45:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/cryptography/</loc>
-    <lastmod>2019-07-15T09:00:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/css/</loc>
-    <lastmod>2019-04-05T10:30:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/data-structure/</loc>
-    <lastmod>2019-07-15T09:00:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/databases/</loc>
-    <lastmod>2019-05-22T21:30:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/html/</loc>
-    <lastmod>2019-04-08T12:45:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/iterm/</loc>
-    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/javascript/</loc>
-    <lastmod>2019-06-29T09:15:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/postgres/</loc>
-    <lastmod>2019-05-22T21:30:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/rails/</loc>
-    <lastmod>2019-04-03T11:45:45-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/ruby/</loc>
-    <lastmod>2019-05-15T08:00:45-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/security/</loc>
-    <lastmod>2019-04-01T09:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-06-24T09:00:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/testing/</loc>
-    <lastmod>2019-05-04T15:30:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/vim/</loc>
-    <lastmod>2019-07-26T17:30:10-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

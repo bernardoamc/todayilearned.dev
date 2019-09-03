@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ruby on Today I Learned</title>
+    <title>ruby on Today I Learned</title>
     <link>https://todayilearned.dev/tags/ruby/</link>
-    <description>Recent content in Ruby on Today I Learned</description>
+    <description>Recent content in ruby on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 08:00:45 -0400</lastBuildDate>

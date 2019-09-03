@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Computer Architecture on Today I Learned</title>
+    <title>computer-architecture on Today I Learned</title>
     <link>https://todayilearned.dev/tags/computer-architecture/</link>
-    <description>Recent content in Computer Architecture on Today I Learned</description>
+    <description>Recent content in computer-architecture on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2019 18:45:10 -0400</lastBuildDate>

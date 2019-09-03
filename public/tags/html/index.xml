@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Html on Today I Learned</title>
+    <title>html on Today I Learned</title>
     <link>https://todayilearned.dev/tags/html/</link>
-    <description>Recent content in Html on Today I Learned</description>
+    <description>Recent content in html on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Apr 2019 12:45:00 -0400</lastBuildDate>

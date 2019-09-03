@@ -6,31 +6,22 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jun 2019 09:00:10 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 10:30:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Algorithm</title>
-      <link>https://todayilearned.dev/tags/algorithm/</link>
-      <pubDate>Mon, 24 Jun 2019 09:00:10 -0400</pubDate>
+      <title>iterm</title>
+      <link>https://todayilearned.dev/tags/iterm/</link>
+      <pubDate>Tue, 03 Sep 2019 10:30:10 -0400</pubDate>
       
-      <guid>https://todayilearned.dev/tags/algorithm/</guid>
+      <guid>https://todayilearned.dev/tags/iterm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Android</title>
-      <link>https://todayilearned.dev/tags/android/</link>
-      <pubDate>Fri, 22 Mar 2019 16:30:10 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bash</title>
+      <title>bash</title>
       <link>https://todayilearned.dev/tags/bash/</link>
       <pubDate>Mon, 12 Aug 2019 20:35:10 -0400</pubDate>
       
@@ -39,16 +30,16 @@
     </item>
     
     <item>
-      <title>Computer Architecture</title>
-      <link>https://todayilearned.dev/tags/computer-architecture/</link>
-      <pubDate>Thu, 09 May 2019 18:45:10 -0400</pubDate>
+      <title>vim</title>
+      <link>https://todayilearned.dev/tags/vim/</link>
+      <pubDate>Fri, 26 Jul 2019 17:30:10 -0400</pubDate>
       
-      <guid>https://todayilearned.dev/tags/computer-architecture/</guid>
+      <guid>https://todayilearned.dev/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Cryptography</title>
+      <title>cryptography</title>
       <link>https://todayilearned.dev/tags/cryptography/</link>
       <pubDate>Mon, 15 Jul 2019 09:00:10 -0400</pubDate>
       
@@ -57,16 +48,7 @@
     </item>
     
     <item>
-      <title>Css</title>
-      <link>https://todayilearned.dev/tags/css/</link>
-      <pubDate>Fri, 05 Apr 2019 10:30:00 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
+      <title>data-structure</title>
       <link>https://todayilearned.dev/tags/data-structure/</link>
       <pubDate>Mon, 15 Jul 2019 09:00:10 -0400</pubDate>
       
@@ -75,34 +57,7 @@
     </item>
     
     <item>
-      <title>Databases</title>
-      <link>https://todayilearned.dev/tags/databases/</link>
-      <pubDate>Wed, 22 May 2019 21:30:10 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/databases/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://todayilearned.dev/tags/html/</link>
-      <pubDate>Mon, 08 Apr 2019 12:45:00 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Iterm</title>
-      <link>https://todayilearned.dev/tags/iterm/</link>
-      <pubDate>Mon, 12 Aug 2019 20:35:10 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/iterm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
+      <title>javascript</title>
       <link>https://todayilearned.dev/tags/javascript/</link>
       <pubDate>Sat, 29 Jun 2019 09:15:00 -0400</pubDate>
       
@@ -111,7 +66,25 @@
     </item>
     
     <item>
-      <title>Postgres</title>
+      <title>algorithm</title>
+      <link>https://todayilearned.dev/tags/algorithm/</link>
+      <pubDate>Mon, 24 Jun 2019 09:00:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>databases</title>
+      <link>https://todayilearned.dev/tags/databases/</link>
+      <pubDate>Wed, 22 May 2019 21:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgres</title>
       <link>https://todayilearned.dev/tags/postgres/</link>
       <pubDate>Wed, 22 May 2019 21:30:10 -0400</pubDate>
       
@@ -120,16 +93,7 @@
     </item>
     
     <item>
-      <title>Rails</title>
-      <link>https://todayilearned.dev/tags/rails/</link>
-      <pubDate>Wed, 03 Apr 2019 11:45:45 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/rails/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ruby</title>
+      <title>ruby</title>
       <link>https://todayilearned.dev/tags/ruby/</link>
       <pubDate>Wed, 15 May 2019 08:00:45 -0400</pubDate>
       
@@ -138,16 +102,16 @@
     </item>
     
     <item>
-      <title>Security</title>
-      <link>https://todayilearned.dev/tags/security/</link>
-      <pubDate>Mon, 01 Apr 2019 09:00:00 -0400</pubDate>
+      <title>computer-architecture</title>
+      <link>https://todayilearned.dev/tags/computer-architecture/</link>
+      <pubDate>Thu, 09 May 2019 18:45:10 -0400</pubDate>
       
-      <guid>https://todayilearned.dev/tags/security/</guid>
+      <guid>https://todayilearned.dev/tags/computer-architecture/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Testing</title>
+      <title>testing</title>
       <link>https://todayilearned.dev/tags/testing/</link>
       <pubDate>Sat, 04 May 2019 15:30:10 -0400</pubDate>
       
@@ -156,11 +120,47 @@
     </item>
     
     <item>
-      <title>Vim</title>
-      <link>https://todayilearned.dev/tags/vim/</link>
-      <pubDate>Fri, 26 Jul 2019 17:30:10 -0400</pubDate>
+      <title>html</title>
+      <link>https://todayilearned.dev/tags/html/</link>
+      <pubDate>Mon, 08 Apr 2019 12:45:00 -0400</pubDate>
       
-      <guid>https://todayilearned.dev/tags/vim/</guid>
+      <guid>https://todayilearned.dev/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://todayilearned.dev/tags/css/</link>
+      <pubDate>Fri, 05 Apr 2019 10:30:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rails</title>
+      <link>https://todayilearned.dev/tags/rails/</link>
+      <pubDate>Wed, 03 Apr 2019 11:45:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/rails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://todayilearned.dev/tags/security/</link>
+      <pubDate>Mon, 01 Apr 2019 09:00:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://todayilearned.dev/tags/android/</link>
+      <pubDate>Fri, 22 Mar 2019 16:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/android/</guid>
       <description></description>
     </item>
     
