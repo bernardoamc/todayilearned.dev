@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/spotlight/</loc>
+    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/spotlight-tricks/</loc>
+    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/delete-word-iterm/</loc>
     <lastmod>2019-09-03T10:30:10-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/tags/iterm/</loc>
-    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-09-03T10:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2019-09-03T10:30:10-04:00</lastmod>
   </url>
   
