@@ -4,7 +4,27 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
+    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/vim/</loc>
+    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/vim-scriptnames/</loc>
+    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +34,6 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/spotlight-tricks/</loc>
-    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-09-06T23:15:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2019-09-06T23:15:10-04:00</lastmod>
   </url>
   
@@ -50,11 +60,6 @@
   <url>
     <loc>https://todayilearned.dev/posts/curl-data/</loc>
     <lastmod>2019-08-02T22:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/vim/</loc>
-    <lastmod>2019-07-26T17:30:10-04:00</lastmod>
   </url>
   
   <url>
