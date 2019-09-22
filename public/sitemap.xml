@@ -3,18 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/tags/algorithm/</loc>
+    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/count-min-sketch/</loc>
+    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/</loc>
-    <lastmod>2019-09-14T23:10:10-04:00</lastmod>
+    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
   </url>
   
   <url>
@@ -90,11 +100,6 @@
   <url>
     <loc>https://todayilearned.dev/tags/javascript/</loc>
     <lastmod>2019-06-29T09:15:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/algorithm/</loc>
-    <lastmod>2019-06-24T09:00:10-04:00</lastmod>
   </url>
   
   <url>

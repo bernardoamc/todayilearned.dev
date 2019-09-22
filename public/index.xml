@@ -6,10 +6,20 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Sep 2019 23:10:10 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2019 09:12:35 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>count min sketch</title>
+      <link>https://todayilearned.dev/posts/count-min-sketch/</link>
+      <pubDate>Sun, 22 Sep 2019 09:12:35 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/count-min-sketch/</guid>
+      <description>TIL about Count-Min Sketch, an algorithm used to answer questions like:
+ What’s the frequency of our samples? What’s our most frequent samples?  Similar to bloom filters, it uses k distinct hash functions. Every observed value serves as an input for these functions and the output for each function is a number corresponding to a bucket.After finding the buckets we just need to increment a counter in each of these buckets.</description>
+    </item>
     
     <item>
       <title>Vim :scriptnames</title>

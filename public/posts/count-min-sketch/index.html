@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Vim :scriptnames &middot; Today I Learned
+				count min sketch &middot; Today I Learned
 		</title>
 
 		
@@ -64,32 +64,45 @@
     <span>Written by</span>
         Bernardo
         <br>
-        <span>on&nbsp;</span><time datetime="2019-09-14 23:10:10 -0400 EDT">September 14, 2019</time>
+        <span>on&nbsp;</span><time datetime="2019-09-22 09:12:35 -0400 EDT">September 22, 2019</time>
 </div>
-		<h1 class="post-title">Vim :scriptnames</h1>
+		<h1 class="post-title">count min sketch</h1>
 <div class="post-line"></div>
     
 
   <ul class="tags">
     
       <li class="tag">
-          <a href="https://todayilearned.dev/tags/vim/">vim</a>
+          <a href="https://todayilearned.dev/tags/algorithm/">algorithm</a>
         </li></ul>
 
 
 		
 
-		<p>TIL about <code>:scriptnames</code> in order to get a list of scripts that <code>vim</code> has
-loaded. It&rsquo;s pretty useful since we can infer if any of our scripts are
-being overridden by another one. We can also run this command as <code>scr</code></p>
+		<p>TIL about <a href="https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch">Count-Min Sketch</a>, an algorithm used to answer questions like:</p>
+
+<ul>
+<li>What’s the frequency of our samples?</li>
+<li>What’s our most frequent samples?</li>
+</ul>
+
+<p>Similar to <a href="https://en.wikipedia.org/wiki/Bloom_filter">bloom filters</a>, it uses <code>k</code> distinct hash functions. Every observed
+value serves as an input for these functions and the output for each function
+is a number corresponding to a bucket.After finding the buckets we just need
+to increment a counter in each of these buckets.</p>
+
+<p>In order to retrieve the frequency of an observed value we find the buckets for
+this value and return the minimum counter among all the buckets: <code>min(bucket_x, bucket_y, bucket_z)</code></p>
+
+<p>A short version the paper can be found
+<a href="http://dimacs.rutgers.edu/~graham/pubs/papers/cmsoft.pdf">here</a>.</p>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/posts/spotlight-tricks/" class="left arrow">&#8592;</a>
-		<a href="/posts/count-min-sketch/" class="right arrow">&#8594;</a>
+		<a href="/posts/vim-scriptnames/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
