@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/cookie-tossing/</loc>
+    <lastmod>2019-10-02T12:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2019-10-02T12:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2019-10-02T12:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2019-10-02T12:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/web/</loc>
+    <lastmod>2019-10-02T12:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/tags/algorithm/</loc>
     <lastmod>2019-09-22T09:12:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/posts/count-min-sketch/</loc>
-    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-09-22T09:12:35-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2019-09-22T09:12:35-04:00</lastmod>
   </url>
   
