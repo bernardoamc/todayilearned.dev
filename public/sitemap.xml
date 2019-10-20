@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/flock/</loc>
+    <lastmod>2019-10-19T23:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2019-10-19T23:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/system-call/</loc>
+    <lastmod>2019-10-19T23:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2019-10-19T23:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2019-10-19T23:30:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/from-str/</loc>
     <lastmod>2019-10-19T22:20:45-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2019-10-19T22:20:45-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://todayilearned.dev/tags/rust/</loc>
-    <lastmod>2019-10-19T22:20:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2019-10-19T22:20:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2019-10-19T22:20:45-04:00</lastmod>
   </url>
   

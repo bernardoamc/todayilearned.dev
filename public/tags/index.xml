@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 22:20:45 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 23:30:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>system-call</title>
+      <link>https://todayilearned.dev/tags/system-call/</link>
+      <pubDate>Sat, 19 Oct 2019 23:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/system-call/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>rust</title>
