@@ -6,10 +6,21 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2019 12:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 22:20:45 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>from-str</title>
+      <link>https://todayilearned.dev/posts/from-str/</link>
+      <pubDate>Sat, 19 Oct 2019 22:20:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/from-str/</guid>
+      <description>TIL about the FromStr trait in Rust that is implicitly used through str&amp;rsquo;s parse method.
+We could have a struct called Period that parses a string like: &amp;ldquo;10 days&amp;rdquo; into Period { value: 10, timeframe: &amp;quot;days&amp;quot; }. The way to use it would be:
+let period = &amp;#34;10 days&amp;#34;.parse::&amp;lt;Period&amp;gt;();  </description>
+    </item>
     
     <item>
       <title>Cookie Tossing</title>
