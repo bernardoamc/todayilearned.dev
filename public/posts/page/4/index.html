@@ -61,6 +61,22 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/template-tag/" class="catalogue-item">
+    <div>
+        <time datetime="2019-04-01 09:00:00 -0400 EDT" class="catalogue-time">April 1, 2019</time>
+        <h1 class="catalogue-title">template tag</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the template tag. It&rsquo;s used to hold client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.
+Let&rsquo;s see some client side input without the template tag:
+let container = document.createElement(&#39;div&#39;); // This will trigger the alert  container.innerHTML = &#34;&lt;img src=x onerror=alert(1)&gt;&#34;  Now let&rsquo;s use the &lt;template&gt; tag:
+let container = document.createElement(&#39;template&#39;); // Alert NOT triggered  container.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/open-uri/" class="catalogue-item">
     <div>
         <time datetime="2019-03-30 12:50:45 -0400 EDT" class="catalogue-time">March 30, 2019</time>
@@ -192,21 +208,6 @@ $ jot -r 3 1 20 5 12 19 Not all of the flags are covered here, man jot does a go
             TIL about the Intersection Observer API. It allows us to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document&rsquo;s viewport.
 Let&rsquo;s see a small example:
 // Create the observer and pass it a callback function. // The callback will run whenever a threshold is crossed. var options = { root: document.querySelector(&#39;#scrollArea&#39;), rootMargin: &#39;0px&#39;, threshold: 1.0 } var observer = new IntersectionObserver(callback, options); // Watch this element, please: var target = document.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/at-command/" class="catalogue-item">
-    <div>
-        <time datetime="2019-03-15 12:15:10 -0400 EDT" class="catalogue-time">March 15, 2019</time>
-        <h1 class="catalogue-title">at command</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the at command. It allows us to schedule commands to be executed at a later time.
-$ echo &#34;bla&#34; | at now + 5 minutes or if you want to execute commands from a file later on:
-$ at -f path/to/file 9:30 PM Tue We can type atq to see existing jobs. For more information check man or tldr, it&rsquo;s a really interesting suite of commands.
         </p>
     </div>
 </a>

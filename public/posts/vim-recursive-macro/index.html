@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				Vim recursive macros &middot; Today I Learned
+		</title>
+
+		
+  	<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-11-01 15:15:10 -0400 EDT">November 1, 2019</time>
+</div>
+		<h1 class="post-title">Vim recursive macros</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/vim/">vim</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about recursive macros in vim. As the name implies, it consists of calling
+your macro within the macro your are building. Pre-requisites:</p>
+
+<ol>
+<li>Having a clear register (<code>qa</code> -&gt; <code>q</code> to clear register <code>a</code>)</li>
+<li>Having a break point through <code>t</code> or <code>f</code> if we don&rsquo;t want to run on all lines</li>
+</ol>
+
+<p>Suppose we have the following file:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"> <span style="color:#ae81ff">1</span>  abc,<span style="color:#ae81ff">123</span>
+ <span style="color:#ae81ff">2</span>  bcd,<span style="color:#ae81ff">4</span>
+ <span style="color:#ae81ff">3</span>  cde,<span style="color:#ae81ff">54321</span>
+ <span style="color:#ae81ff">4</span>  <span style="color:#66d9ef">def</span>,<span style="color:#ae81ff">88</span></code></pre></div>
+
+<p>And we want the end result to be:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;abc&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>
+hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;bcd&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;cde&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">54321</span>
+hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;def&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">88</span></code></pre></div>
+
+<p>In order to build our recursive macro:</p>
+
+<table>
+<thead>
+<tr>
+<th>Command &nbsp;&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>qa</code></td>
+<td>Start macro</td>
+</tr>
+
+<tr>
+<td><code>02cw</code></td>
+<td>Go to beginning of line and change two words</td>
+</tr>
+
+<tr>
+<td><code>hash&quot;[&lt;esc&gt;</code>&nbsp;</td>
+<td>Insert <code>hash[&quot;</code> characters and exit normal mode</td>
+</tr>
+
+<tr>
+<td><code>f,</code></td>
+<td>Find the next <code>,</code> character</td>
+</tr>
+
+<tr>
+<td><code>i&quot;] = &lt;esc&gt;</code></td>
+<td>Insert <code>&quot;] =</code> characters and exit normal mode</td>
+</tr>
+
+<tr>
+<td><code>lx</code></td>
+<td>Move left and delete a character (the <code>,</code> in this case)</td>
+</tr>
+
+<tr>
+<td><code>j</code></td>
+<td>Go to the line below</td>
+</tr>
+
+<tr>
+<td><code>@a</code></td>
+<td>Call your macro. This creates the recursion</td>
+</tr>
+
+<tr>
+<td><code>q</code></td>
+<td>Finish macro</td>
+</tr>
+</tbody>
+</table>
+
+<p>After that calling <code>@a</code> will change every line.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/flock/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019">2019</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>
