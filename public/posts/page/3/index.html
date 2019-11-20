@@ -61,6 +61,21 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/bsearch/" class="catalogue-item">
+    <div>
+        <time datetime="2019-05-15 08:00:45 -0400 EDT" class="catalogue-time">May 15, 2019</time>
+        <h1 class="catalogue-title">bsearch</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL that we have a builtin bsearch in the Array class. It&rsquo;s common for Rubyists to default to find, but as we know bsearch performs much better when we have a sorted Array.
+Let&rsquo;s see an example:
+ary = [0, 4, 7, 10, 12] ary.bsearch {|x| x &gt;= 4 } #=&gt; 4 ary.bsearch {|x| x &gt;= -1 } #=&gt; 0 We can also use it to search String objects, but in this case we need to use the &lt;=&gt; operator in order to return -1, 0 or 1.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/amdahl-law/" class="catalogue-item">
     <div>
         <time datetime="2019-05-09 18:45:10 -0400 EDT" class="catalogue-time">May 9, 2019</time>
@@ -187,21 +202,6 @@ The way this is done is by dividing the data into chunks of 2^16 integers and us
         <p>
             TIL about the prefers-color-scheme CSS media feature. It is used to detect if the user has requested the system use a light or dark color theme.
 @media (prefers-color-scheme: dark) { } Right now it&rsquo;s a feature that is just supported by Firefox and Safari.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/safe-buffer-back-reference/" class="catalogue-item">
-    <div>
-        <time datetime="2019-04-03 11:45:45 -0400 EDT" class="catalogue-time">April 3, 2019</time>
-        <h1 class="catalogue-title">safe buffer back reference</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL back references for sub, sub!, gsub, and gsub! are finally fixed for ActiveSupport::SafeBuffer through the use of block.binding.eval.
-The behaviour being fixed is:
-&#34;foo123&#34;.html_safe.sub(/([a-z]+)([0-9]+)/) { $2 + $1 #=&gt; NoMethodError: undefined method `+&#39; for nil:NilClass } If this is confusing I recommend the following resource: Bindings in Ruby – Behind the Magic of Blocks
         </p>
     </div>
 </a>

@@ -6,10 +6,21 @@
     <description>Recent content in rust on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 22:20:45 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 00:55:35 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rust closures</title>
+      <link>https://todayilearned.dev/posts/rust-closures/</link>
+      <pubDate>Wed, 20 Nov 2019 00:55:35 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/rust-closures/</guid>
+      <description>TIL that Rust closures creates an anonymous struct in order to represent their environment. As an example:
+let a = 42; let b = 100; let f = |v: i32| v + a + b;  would be represented as something like:
+struct __anonymous_e3b0105&amp;lt;&amp;#39;a&amp;gt; { a: &amp;amp;&amp;#39;a i32, b: &amp;amp;&amp;#39;a i32, }  </description>
+    </item>
     
     <item>
       <title>from-str</title>

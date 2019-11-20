@@ -61,6 +61,21 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/rust-closures/" class="catalogue-item">
+    <div>
+        <time datetime="2019-11-20 00:55:35 -0400 -0400" class="catalogue-time">November 20, 2019</time>
+        <h1 class="catalogue-title">rust closures</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL that Rust closures creates an anonymous struct in order to represent their environment. As an example:
+let a = 42; let b = 100; let f = |v: i32| v + a + b;  would be represented as something like:
+struct __anonymous_e3b0105&lt;&#39;a&gt; { a: &amp;&#39;a i32, b: &amp;&#39;a i32, }  
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/vim-recursive-macro/" class="catalogue-item">
     <div>
         <time datetime="2019-11-01 15:15:10 -0400 EDT" class="catalogue-time">November 1, 2019</time>
@@ -186,19 +201,6 @@ This becomes problematic when a website allows untrusted people to host subdomai
 Again, scripting plays a huge part in how useful the status bar is.
 As an example:
 # In ~/.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/curl-data/" class="catalogue-item">
-    <div>
-        <time datetime="2019-08-02 22:00:00 -0400 EDT" class="catalogue-time">August 2, 2019</time>
-        <h1 class="catalogue-title">curl data</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL that curl --data and curl --data-binary when used with a @filename outputs a different result. The most common one being that --data will strip newlines from the file but --data-binary will not.
         </p>
     </div>
 </a>
