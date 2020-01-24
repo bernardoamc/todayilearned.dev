@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Nov 2019 00:55:35 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 21:54:02 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>rust</title>
       <link>https://todayilearned.dev/tags/rust/</link>
-      <pubDate>Wed, 20 Nov 2019 00:55:35 -0400</pubDate>
+      <pubDate>Thu, 23 Jan 2020 21:54:02 -0400</pubDate>
       
       <guid>https://todayilearned.dev/tags/rust/</guid>
       <description></description>

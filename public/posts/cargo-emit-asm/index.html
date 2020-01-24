@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Tags &middot; Today I Learned
+				cargo-rustc-emit-asm &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -57,13 +57,45 @@
 		</nav>
 
         
+
 <main>
-    <h1>Tags</h1>
-	<div class="catalogue">
-        <ul><li><a href="https://todayilearned.dev/tags/javascript/">javascript</a></li><li><a href="https://todayilearned.dev/tags/databases/">databases</a></li><li><a href="https://todayilearned.dev/tags/postgres/">postgres</a></li><li><a href="https://todayilearned.dev/tags/ruby/">ruby</a></li><li><a href="https://todayilearned.dev/tags/computer-architecture/">computer-architecture</a></li><li><a href="https://todayilearned.dev/tags/testing/">testing</a></li><li><a href="https://todayilearned.dev/tags/html/">html</a></li><li><a href="https://todayilearned.dev/tags/css/">css</a></li><li><a href="https://todayilearned.dev/tags/rails/">rails</a></li><li><a href="https://todayilearned.dev/tags/security/">security</a></li></ul>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-01-23 21:54:02 -0400 -0400">January 23, 2020</time>
+</div>
+		<h1 class="post-title">cargo-rustc-emit-asm</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/rust/">rust</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL that we can get optimized assembly output from a Cargo project by running the
+following command:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo rustc --release -- --emit asm</code></pre></div>
+
+<p>This will output <code>x86</code> by default, but say we wanted the <code>intel</code> syntax?</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo rustc -- --emit asm -C <span style="color:#e6db74">&#34;llvm-args=-x86-asm-syntax=intel&#34;</span></code></pre></div>
+
+
+		
 	</div>
-	
-	<div class="pagination"><a href="/tags/" class="left arrow">&#8592;</a><a href="/tags/page/3/" class="right arrow">&#8594;</a><span>2</span>
+
+	<div class="pagination">
+		<a href="/posts/rust-closures/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 
