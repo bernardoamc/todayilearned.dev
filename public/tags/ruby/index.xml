@@ -6,10 +6,20 @@
     <description>Recent content in ruby on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 08:00:45 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2020 15:50:45 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>disable-gems</title>
+      <link>https://todayilearned.dev/posts/disable-gems/</link>
+      <pubDate>Thu, 20 Feb 2020 15:50:45 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/disable-gems/</guid>
+      <description>TIL that we can disable gems when loading a Ruby script through --disable=gems.
+$ ruby --disable=gems -e &amp;#39;&amp;#39; </description>
+    </item>
     
     <item>
       <title>bsearch</title>

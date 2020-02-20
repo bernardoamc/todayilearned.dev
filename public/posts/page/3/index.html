@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/rum-index/" class="catalogue-item">
+    <div>
+        <time datetime="2019-05-22 21:30:10 -0400 EDT" class="catalogue-time">May 22, 2019</time>
+        <h1 class="catalogue-title">rum index</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the RUM index extension in PostgreSQL. It is a variant of the GIN index that stores additional information in the posting tree like lexemes position and timestamps. This solves known GIN problems like slow ranking and phrase searching.
+The drawback of course is that this additional information incurs extra build and insert time, making it not ideal for tables that change often.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/power-of-two-choices/" class="catalogue-item">
     <div>
         <time datetime="2019-05-17 20:50:10 -0400 EDT" class="catalogue-time">May 17, 2019</time>
@@ -188,20 +202,6 @@ $ cp -u *.txt app_dir It&rsquo;s a nice replacement to the interactive flag (-i)
             TIL about roaring bitmap, a hybrid data structure.
 It&rsquo;s a data structure that is especially suited to compute the intersection, union and the difference between sets. It uses different approaches depending on how your data is distributed like uncompressed bitmaps or sorted arrays.
 The way this is done is by dividing the data into chunks of 2^16 integers and using a different strategy for each chunk depending on the data distribution.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/base-tag/" class="catalogue-item">
-    <div>
-        <time datetime="2019-04-08 12:45:00 -0400 EDT" class="catalogue-time">April 8, 2019</time>
-        <h1 class="catalogue-title">base tag</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the base HTML tag. It specifies the base URL to be used for all relative URLs within a document.
-&lt;base href=&#34;http://www.example.com/&#34;&gt; &lt;!-- Refers to: http://www.example.com/#relative --&gt; &lt;a href=&#34;#relative&#34;&gt;Relative&lt;/a&gt; It is supported by all major browsers.
         </p>
     </div>
 </a>

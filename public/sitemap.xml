@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/disable-gems/</loc>
+    <lastmod>2020-02-20T15:50:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2020-02-20T15:50:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/ruby/</loc>
+    <lastmod>2020-02-20T15:50:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2020-02-20T15:50:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2020-02-20T15:50:45-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/cargo-emit-asm/</loc>
     <lastmod>2020-01-23T21:54:02-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2020-01-23T21:54:02-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://todayilearned.dev/tags/rust/</loc>
-    <lastmod>2020-01-23T21:54:02-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2020-01-23T21:54:02-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2020-01-23T21:54:02-04:00</lastmod>
   </url>
   
@@ -189,11 +199,6 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/bsearch/</loc>
-    <lastmod>2019-05-15T08:00:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/ruby/</loc>
     <lastmod>2019-05-15T08:00:45-04:00</lastmod>
   </url>
   
