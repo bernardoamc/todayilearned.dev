@@ -6,10 +6,22 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Feb 2020 15:50:45 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 22:33:17 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>floyd&#39;s tortoise and hare algorithm</title>
+      <link>https://todayilearned.dev/posts/floyd-tortoise-hare/</link>
+      <pubDate>Sun, 01 Mar 2020 22:33:17 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/floyd-tortoise-hare/</guid>
+      <description>TIL about Floyd&amp;rsquo;s Tortoise and Hare algorithm.
+This algorithm is used to detect whether there is a cycle in a list, and given that a cycle exists its starting point and the length of the cycle.
+The algorithm can also be used to prove the existence of duplicate numbers in a list.
+The time complexity of this algorithm is linear: O(n). The space complexity of this algorithm is constant: O(1).</description>
+    </item>
     
     <item>
       <title>disable-gems</title>
