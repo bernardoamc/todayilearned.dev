@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macos on Today I Learned</title>
+    <link>https://todayilearned.dev/tags/macos/</link>
+    <description>Recent content in macos on Today I Learned</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Mar 2020 19:45:10 -0400</lastBuildDate>
+    
+	<atom:link href="https://todayilearned.dev/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>launchd timed jobs</title>
+      <link>https://todayilearned.dev/posts/launchd/</link>
+      <pubDate>Sat, 21 Mar 2020 19:45:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/launchd/</guid>
+      <description>TIL about scheduling timed jobs on MacOS through launchd.
+Each launchd job is described by a separate plist file, meaning you can manage launchd timed jobs by simply adding or removing a file. These files should be placed in certain folders according to the goal of the job:
+ System tasks go to:  /Library/LaunchDaemons/ if they need to run no matter if a user is logged in to the system or not.</description>
+    </item>
+    
+  </channel>
+</rss>
