@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/uuencode/" class="catalogue-item">
+    <div>
+        <time datetime="2019-06-14 20:35:10 -0400 EDT" class="catalogue-time">June 14, 2019</time>
+        <h1 class="catalogue-title">uuencode</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the uuencode and uudecode command utilities. It allows us to decode and encode binary files respectively.
+$ echo &#39;foo&#39; | uuencode -o my_binary my_binary $ file my_binary my_binary: uuencoded or xxencoded text, ASCII text $ cat my_binary begin 644 my_binary $9F]O&#34;@`` ` end $uudecode my_binary $cat my_binary foo 
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/quickfix-reflector/" class="catalogue-item">
     <div>
         <time datetime="2019-06-08 22:45:10 -0400 EDT" class="catalogue-time">June 8, 2019</time>
@@ -185,21 +199,6 @@ The idea is to make your test database’s storage live in memory instead of on-
 The way this is accomplished is by using the sideEffects package.json property.
 { &#34;name&#34;: &#34;your-project&#34;, &#34;sideEffects&#34;: false }  &quot;sideEffects&quot;: false in this context means that our code doesn&rsquo;t have special behaviour when imported other than exposing one or more exports. If that&rsquo;s not the case we can whitelist these special files:
 { &#34;name&#34;: &#34;your-project&#34;, &#34;sideEffects&#34;: [ &#34;.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/ulids/" class="catalogue-item">
-    <div>
-        <time datetime="2019-04-29 08:30:10 -0400 EDT" class="catalogue-time">April 29, 2019</time>
-        <h1 class="catalogue-title">ulids</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about ULID, which stands for &ldquo;Universally Unique Lexicographically Sortable Identifier&rdquo;. Like UUID, ULID have 128 bits but are represented as a 26 character string, as opposed to 36.
-An ULID is composed of a timestamp + random sequence of bits:
-01AN4Z07BY 79KA1307SR9X4MV3 |----------| |----------------| Timestamp Randomness 48bits 80bits  It gives the system the possibility of sorting identifiers unlike UUIDs, but still makes it difficult to guess an identifier and the amount of resources our system has, which are two potential problems of using sequential ids.
         </p>
     </div>
 </a>

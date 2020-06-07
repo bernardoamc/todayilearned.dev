@@ -61,6 +61,21 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/sudo-tee/" class="catalogue-item">
+    <div>
+        <time datetime="2020-06-07 13:00:00 -0400 EDT" class="catalogue-time">June 7, 2020</time>
+        <h1 class="catalogue-title">sudo tee</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            When we don&rsquo;t want to run a shell with sudo but still want to redirect output to a location we don&rsquo;t have permission to access we can use the sudo tee trick.
+$ sudo cat /root/file | sudo tee /whatever/test.out &gt; /dev/null The redirect to /dev/null is there to stop tee from outputting to the screen.
+We have to use sudo with tee because a normal redirection performed by the shell is running with our users permissions.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/launchd/" class="catalogue-item">
     <div>
         <time datetime="2020-03-21 19:45:10 -0400 EDT" class="catalogue-time">March 21, 2020</time>
@@ -190,20 +205,6 @@ let period = &#34;10 days&#34;.parse::&lt;Period&gt;();
         <p>
             TIL about the term cookie tossing, an attack leverages the feature that a subdomain can put a key=value pair in a cookie which can then also be read by the domain above it. For example, todayilearned.dev doesn&rsquo;t know if this key comes from it or from cookie.todayilearned.dev.
 This becomes problematic when a website allows untrusted people to host subdomains under its domain. They can then abuse this feature to write manipulated cookie information.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/count-min-sketch/" class="catalogue-item">
-    <div>
-        <time datetime="2019-09-22 09:12:35 -0400 EDT" class="catalogue-time">September 22, 2019</time>
-        <h1 class="catalogue-title">count min sketch</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about Count-Min Sketch, an algorithm used to answer questions like:
- What’s the frequency of our samples? What’s our most frequent samples?  Similar to bloom filters, it uses k distinct hash functions. Every observed value serves as an input for these functions and the output for each function is a number corresponding to a bucket.After finding the buckets we just need to increment a counter in each of these buckets.
         </p>
     </div>
 </a>

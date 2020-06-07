@@ -61,6 +61,23 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/android-memory-usage/" class="catalogue-item">
+    <div>
+        <time datetime="2019-03-22 16:30:10 -0400 EDT" class="catalogue-time">March 22, 2019</time>
+        <h1 class="catalogue-title">android memory usage</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL Android has a tool called procrank (/system/xbin/procrank), which lists out the memory usage of Linux processes in order from highest to lowest usage. The sizes reported per process are VSS, RSS, PSS, and USS.
+VSS
+ is the total accessible address space of a process.  RSS
+ is the total memory actually held in RAM for a process, including shared libraries.  PSS
+ same as RSS, but reports the proportional size of its shared libraries.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/will-change/" class="catalogue-item">
     <div>
         <time datetime="2019-03-20 19:30:00 -0400 EDT" class="catalogue-time">March 20, 2019</time>
@@ -192,21 +209,6 @@ $ ps -o rss -p 5380 RSS 1784  rss represents the real memory, that is, the proce
 Let&rsquo;s see how this works with a quick example. Suppose we have a file like the following:
 1 abc,123 2 bcd,4 3 cde,54321 4 def,88 And we want the end result to be:
 hash[&#34;abc&#34;] = 123 hash[&#34;bcd&#34;] = 4 hash[&#34;cde&#34;] = 54321 hash[&#34;def&#34;] = 88 To solve this in one command we can select the lines we want to modify and use:
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/vim-repeat-substitute/" class="catalogue-item">
-    <div>
-        <time datetime="2019-03-10 20:25:10 -0400 EDT" class="catalogue-time">March 10, 2019</time>
-        <h1 class="catalogue-title">Vim Repeat Substitute</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the &amp; command in Vim and how it can be used to repeat the last search and replace pattern.
-Let&rsquo;s see how this works with a quick example. Suppose we have a file like the following:
-rock paper scissors rock paper scissors rock paper scissors And you want to replace the word rock with lizard just in the lines one and three (don&rsquo;t ask me why). Normally I would do something like:
         </p>
     </div>
 </a>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				sudo tee &middot; Today I Learned
+		</title>
+
+		
+  	<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		<link rel="stylesheet" href="/header.css">
+		
+	    <script src="content/clipboard.min.js"></script>
+
+    	<script>
+        window.onload = function() {
+          const clipboard = new ClipboardJS('.permalink button');
+          const toast = document.querySelector('.toast');
+
+          let timeout = -1;
+          clipboard.on('success', function(e) {
+            toast.classList.add('open');
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+            	toast.classList.remove('open')
+            }, 2000);
+          });
+        }
+
+      </script>
+
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+	</head>
+
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Today I Learned</h2>
+				</a>
+
+				<ul>
+    <li><a href="/topics">Topics</a></li>
+</ul>
+
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-06-07 13:00:00 -0400 EDT">June 7, 2020</time>
+</div>
+		<h1 class="post-title">sudo tee</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/bash/">bash</a>
+        </li></ul>
+
+
+		
+
+		<p>When we don&rsquo;t want to run a shell with sudo but still want to redirect output
+to a location we don&rsquo;t have permission to access we can use the <code>sudo tee</code>
+trick.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo cat /root/file | sudo tee /whatever/test.out &gt; /dev/null</code></pre></div>
+
+<p>The redirect to <code>/dev/null</code> is there to stop tee from outputting to the screen.</p>
+
+<p>We have to use <code>sudo</code> with <code>tee</code> because a normal redirection performed by the
+shell is running with our users permissions.</p>
+
+<p>This could be further simplified with:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo cat /root/file | sudo dd of<span style="color:#f92672">=</span>/whatever/test.out</code></pre></div>
+
+<p><code>dd</code> is great to write large files (usually images to disks), but also works equally well with small ones.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/launchd/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020">2020</time> <a href="https://twitter.com/bernardo_amc" target="_blank">@bernardo_amc</a>.
+			</span>
+		</footer>
+
+    </body>
+</html>

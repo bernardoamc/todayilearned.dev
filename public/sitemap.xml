@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/tags/bash/</loc>
+    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/sudo-tee/</loc>
+    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/launchd/</loc>
     <lastmod>2020-03-21T19:45:10-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/tags/macos/</loc>
-    <lastmod>2020-03-21T19:45:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2020-03-21T19:45:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2020-03-21T19:45:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2020-03-21T19:45:10-04:00</lastmod>
   </url>
   
@@ -125,11 +135,6 @@
   <url>
     <loc>https://todayilearned.dev/tags/iterm/</loc>
     <lastmod>2019-09-03T10:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/bash/</loc>
-    <lastmod>2019-08-12T20:35:10-04:00</lastmod>
   </url>
   
   <url>
