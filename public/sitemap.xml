@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2020-10-03T15:20:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/ruby/</loc>
+    <lastmod>2020-10-03T15:20:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/ruby-one-liners/</loc>
+    <lastmod>2020-10-03T15:20:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2020-10-03T15:20:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2020-10-03T15:20:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/tags/bash/</loc>
     <lastmod>2020-06-07T13:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://todayilearned.dev/posts/sudo-tee/</loc>
-    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2020-06-07T13:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2020-06-07T13:00:00-04:00</lastmod>
   </url>
   
@@ -49,11 +59,6 @@
   
   <url>
     <loc>https://todayilearned.dev/posts/disable-gems/</loc>
-    <lastmod>2020-02-20T15:50:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/ruby/</loc>
     <lastmod>2020-02-20T15:50:45-04:00</lastmod>
   </url>
   

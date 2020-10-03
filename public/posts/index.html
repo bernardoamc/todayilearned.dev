@@ -61,6 +61,22 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/ruby-one-liners/" class="catalogue-item">
+    <div>
+        <time datetime="2020-10-03 15:20:00 -0400 EDT" class="catalogue-time">October 3, 2020</time>
+        <h1 class="catalogue-title">ruby-one-liners</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the Ruby one-liners cookbook.
+It has tons of interesting examples about how to achieve things in Ruby that we would previously rely on awk or sed to tackle.
+A small example of what you will find there:
+$ ruby -rset -ane &#39;BEGIN{s=Set.new}; (s.add($F[0]); next) if ARGV.size==1; print if s.include?($F[0])&#39; dept.txt marks.txt 
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/sudo-tee/" class="catalogue-item">
     <div>
         <time datetime="2020-06-07 13:00:00 -0400 EDT" class="catalogue-time">June 7, 2020</time>
@@ -191,20 +207,6 @@ For a more fine grained locking mechanism: man 2 fcntl
             TIL about the FromStr trait in Rust that is implicitly used through str&rsquo;s parse method.
 We could have a struct called Period that parses a string like: &ldquo;10 days&rdquo; into Period { value: 10, timeframe: &quot;days&quot; }. The way to use it would be:
 let period = &#34;10 days&#34;.parse::&lt;Period&gt;();  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/cookie-tossing/" class="catalogue-item">
-    <div>
-        <time datetime="2019-10-02 12:30:00 -0400 EDT" class="catalogue-time">October 2, 2019</time>
-        <h1 class="catalogue-title">Cookie Tossing</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the term cookie tossing, an attack leverages the feature that a subdomain can put a key=value pair in a cookie which can then also be read by the domain above it. For example, todayilearned.dev doesn&rsquo;t know if this key comes from it or from cookie.todayilearned.dev.
-This becomes problematic when a website allows untrusted people to host subdomains under its domain. They can then abuse this feature to write manipulated cookie information.
         </p>
     </div>
 </a>

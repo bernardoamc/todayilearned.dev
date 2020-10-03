@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 13:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 15:20:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ruby</title>
+      <link>https://todayilearned.dev/tags/ruby/</link>
+      <pubDate>Sat, 03 Oct 2020 15:20:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/tags/ruby/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>bash</title>
@@ -35,15 +44,6 @@
       <pubDate>Sun, 01 Mar 2020 22:33:17 -0400</pubDate>
       
       <guid>https://todayilearned.dev/tags/algorithm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ruby</title>
-      <link>https://todayilearned.dev/tags/ruby/</link>
-      <pubDate>Thu, 20 Feb 2020 15:50:45 -0400</pubDate>
-      
-      <guid>https://todayilearned.dev/tags/ruby/</guid>
       <description></description>
     </item>
     

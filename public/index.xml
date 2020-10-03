@@ -6,10 +6,22 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 13:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 15:20:00 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ruby-one-liners</title>
+      <link>https://todayilearned.dev/posts/ruby-one-liners/</link>
+      <pubDate>Sat, 03 Oct 2020 15:20:00 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/ruby-one-liners/</guid>
+      <description>TIL about the Ruby one-liners cookbook.
+It has tons of interesting examples about how to achieve things in Ruby that we would previously rely on awk or sed to tackle.
+A small example of what you will find there:
+$ ruby -rset -ane &amp;#39;BEGIN{s=Set.new}; (s.add($F[0]); next) if ARGV.size==1; print if s.include?($F[0])&amp;#39; dept.txt marks.txt </description>
+    </item>
     
     <item>
       <title>sudo tee</title>

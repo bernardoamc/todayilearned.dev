@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Tags &middot; Today I Learned
+				ruby-one-liners &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -57,13 +57,46 @@
 		</nav>
 
         
+
 <main>
-    <h1>Tags</h1>
-	<div class="catalogue">
-        <ul><li><a href="https://todayilearned.dev/tags/ruby/">ruby</a></li><li><a href="https://todayilearned.dev/tags/bash/">bash</a></li><li><a href="https://todayilearned.dev/tags/macos/">macos</a></li><li><a href="https://todayilearned.dev/tags/algorithm/">algorithm</a></li><li><a href="https://todayilearned.dev/tags/rust/">rust</a></li><li><a href="https://todayilearned.dev/tags/vim/">vim</a></li><li><a href="https://todayilearned.dev/tags/system-call/">system-call</a></li><li><a href="https://todayilearned.dev/tags/web/">web</a></li><li><a href="https://todayilearned.dev/tags/spotlight/">spotlight</a></li><li><a href="https://todayilearned.dev/tags/iterm/">iterm</a></li></ul>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-10-03 15:20:00 -0400 EDT">October 3, 2020</time>
+</div>
+		<h1 class="post-title">ruby-one-liners</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/ruby/">ruby</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about the <a href="https://learnbyexample.github.io/learn_ruby_oneliners/preface.html">Ruby one-liners cookbook</a>.</p>
+
+<p>It has tons of interesting examples about how to achieve things in Ruby that we
+would previously rely on <code>awk</code> or <code>sed</code> to tackle.</p>
+
+<p>A small example of what you will find there:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ruby -rset -ane <span style="color:#e6db74">&#39;BEGIN{s=Set.new}; (s.add($F[0]); next) if ARGV.size==1;
+</span><span style="color:#e6db74">                   print if s.include?($F[0])&#39;</span> dept.txt marks.txt</code></pre></div>
+
+
+		
 	</div>
-	
-	<div class="pagination"><a href="/tags/page/2/" class="right arrow">&#8594;</a><span>1</span>
+
+	<div class="pagination">
+		<a href="/posts/sudo-tee/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 
