@@ -6,10 +6,21 @@
     <description>Recent content on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2020 15:20:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2020 23:30:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ELF library loading</title>
+      <link>https://todayilearned.dev/posts/elf-library-loading/</link>
+      <pubDate>Fri, 09 Oct 2020 23:30:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/elf-library-loading/</guid>
+      <description>TIL about the algorithm an interpreter uses in order to load libraries in which your ELF file depends on:
+The interpreter locates the libraries in this order:
+ LD_PRELOAD environment variable, and anything in /etc/ld.so.preload LD_LIBRARY_PATH environment variable DT_RUNPATH or DT_RPATH specified in the binary file (both can be modified with patchelf) system-wide configuration (/etc/ld.so.conf) /lib and /usr/lib  </description>
+    </item>
     
     <item>
       <title>ruby-one-liners</title>

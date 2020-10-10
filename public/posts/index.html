@@ -61,6 +61,21 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/elf-library-loading/" class="catalogue-item">
+    <div>
+        <time datetime="2020-10-09 23:30:10 -0400 EDT" class="catalogue-time">October 9, 2020</time>
+        <h1 class="catalogue-title">ELF library loading</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the algorithm an interpreter uses in order to load libraries in which your ELF file depends on:
+The interpreter locates the libraries in this order:
+ LD_PRELOAD environment variable, and anything in /etc/ld.so.preload LD_LIBRARY_PATH environment variable DT_RUNPATH or DT_RPATH specified in the binary file (both can be modified with patchelf) system-wide configuration (/etc/ld.so.conf) /lib and /usr/lib  
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/ruby-one-liners/" class="catalogue-item">
     <div>
         <time datetime="2020-10-03 15:20:00 -0400 EDT" class="catalogue-time">October 3, 2020</time>
@@ -192,21 +207,6 @@ struct __anonymous_e3b0105&lt;&#39;a&gt; { a: &amp;&#39;a i32, b: &amp;&#39;a i3
             TIL about the flock system call which applies or removes an advisory lock on an open file. The thing to pay attention is the word advisory, other processes can ignore this lock if they wish to do so. This syscall will lock the entire file, which can be pretty bad for highly concurrent systems.
 For more information: man 2 flock
 For a more fine grained locking mechanism: man 2 fcntl
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/from-str/" class="catalogue-item">
-    <div>
-        <time datetime="2019-10-19 22:20:45 -0400 EDT" class="catalogue-time">October 19, 2019</time>
-        <h1 class="catalogue-title">from-str</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the FromStr trait in Rust that is implicitly used through str&rsquo;s parse method.
-We could have a struct called Period that parses a string like: &ldquo;10 days&rdquo; into Period { value: 10, timeframe: &quot;days&quot; }. The way to use it would be:
-let period = &#34;10 days&#34;.parse::&lt;Period&gt;();  
         </p>
     </div>
 </a>

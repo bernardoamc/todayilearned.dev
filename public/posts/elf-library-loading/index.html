@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>
-				Tags &middot; Today I Learned
+				ELF library loading &middot; Today I Learned
 		</title>
 
 		
@@ -38,7 +38,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
-		<link href="https://todayilearned.dev/tags/index.xml" rel="alternate" type="application/rss+xml" title="Today I Learned" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Today I Learned" />
 	</head>
 
 
@@ -57,13 +57,49 @@
 		</nav>
 
         
+
 <main>
-    <h1>Tags</h1>
-	<div class="catalogue">
-        <ul><li><a href="https://todayilearned.dev/tags/rails/">rails</a></li><li><a href="https://todayilearned.dev/tags/security/">security</a></li><li><a href="https://todayilearned.dev/tags/android/">android</a></li></ul>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Bernardo
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-10-09 23:30:10 -0400 EDT">October 9, 2020</time>
+</div>
+		<h1 class="post-title">ELF library loading</h1>
+<div class="post-line"></div>
+    
+
+  <ul class="tags">
+    
+      <li class="tag">
+          <a href="https://todayilearned.dev/tags/linux/">linux</a>
+        </li></ul>
+
+
+		
+
+		<p>TIL about the algorithm an interpreter uses in order to load libraries in which
+your ELF file depends on:</p>
+
+<p>The interpreter locates the libraries in this order:</p>
+
+<ol>
+<li><code>LD_PRELOAD</code> environment variable, and anything in /etc/ld.so.preload</li>
+<li><code>LD_LIBRARY_PATH</code> environment variable</li>
+<li><code>DT_RUNPATH</code> or <code>DT_RPATH</code> specified in the binary file (both can be modified with patchelf)</li>
+<li>system-wide configuration (/etc/ld.so.conf)</li>
+<li><code>/lib</code> and <code>/usr/lib</code></li>
+</ol>
+
+
+		
 	</div>
-	
-	<div class="pagination"><a href="/tags/page/2/" class="left arrow">&#8592;</a><span>3</span>
+
+	<div class="pagination">
+		<a href="/posts/ruby-one-liners/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
 	</div>
 </main>
 
