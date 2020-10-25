@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/brop/" class="catalogue-item">
+    <div>
+        <time datetime="2020-10-25 17:50:10 -0400 EDT" class="catalogue-time">October 25, 2020</time>
+        <h1 class="catalogue-title">blind rop</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about blind rop, a technique to write buffer overflows against targets that restart after a crash. As example, targets that fork and recovers when the child crashes. Since the child has the same memory layout as the parent the stack canary will be the same.
+The idea here is that we can perform an operation similar to a blind SQLI with our binary, overring one byte at each time until we find all the bytes that form our canary.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/elf-library-loading/" class="catalogue-item">
     <div>
         <time datetime="2020-10-09 23:30:10 -0400 EDT" class="catalogue-time">October 9, 2020</time>
@@ -192,21 +206,6 @@ struct __anonymous_e3b0105&lt;&#39;a&gt; { a: &amp;&#39;a i32, b: &amp;&#39;a i3
             TIL about recursive macros in vim. As the name implies, it consists of calling your macro within the macro your are building. Pre-requisites:
  Having a clear register (qa -&gt; q to clear register a) Having a break point through t or f if we don&rsquo;t want to run on all lines  Suppose we have the following file:
 1 abc,123 2 bcd,4 3 cde,54321 4 def,88 And we want the end result to be:
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/flock/" class="catalogue-item">
-    <div>
-        <time datetime="2019-10-19 23:30:10 -0400 EDT" class="catalogue-time">October 19, 2019</time>
-        <h1 class="catalogue-title">flock</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL about the flock system call which applies or removes an advisory lock on an open file. The thing to pay attention is the word advisory, other processes can ignore this lock if they wish to do so. This syscall will lock the entire file, which can be pretty bad for highly concurrent systems.
-For more information: man 2 flock
-For a more fine grained locking mechanism: man 2 fcntl
         </p>
     </div>
 </a>

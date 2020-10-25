@@ -75,6 +75,98 @@
   <ul class="tags">
     
       <li class="tag">
+          <a href="https://todayilearned.dev/tags/buffer-overflow/">buffer-overflow</a>
+        </li></ul>
+
+
+              <div class="permalink">
+  <button aria-label="Copy permalink" data-clipboard-text="https://todayilearned.dev/posts/brop/" type="button">
+  	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M6792.8,4975.4c-326.6-59.8-678.5-202.4-977.4-397.9c-197.8-128.8-1189-1101.6-1258-1232.7c-36.8-71.3-43.7-121.9-36.8-234.6c11.5-177.1,87.4-301.3,236.9-388.7c126.5-75.9,328.9-85.1,450.8-23c43.7,23,296.7,255.3,561.2,515.2c266.8,262.2,535.9,510.6,600.3,549.7c289.8,181.7,650.9,271.4,998.2,250.7c269.1-18.4,411.7-55.2,653.2-172.5c556.6-269.1,894.6-816.5,894.6-1453.5c2.3-296.7-39.1-464.6-181.7-759L8628,1410.6L7692,479.2C6682.4-530.5,6638.7-567.2,6275.3-686.8c-163.3-55.2-220.8-62.1-506-62.1c-276-2.3-347.3,4.6-494.5,50.6c-241.5,75.9-446.2,188.6-630.2,349.6c-184,158.7-269.1,193.2-453.1,179.4c-255.3-18.4-434.7-213.9-434.7-476.1c0-163.3,73.6-294.4,255.3-455.4c878.5-784.2,2203.3-876.2,3201.4-223.1c195.5,126.5,1996.3,1904.3,2178,2148.1c667,894.6,678.5,2168.8,29.9,3079.5c-411.7,575-1046.4,970.6-1738.7,1083.2C7485,5019.1,6999.7,5012.2,6792.8,4975.4z"/><path d="M4021.4,1971.8c-340.4-27.6-667-117.3-961.3-264.5c-324.3-165.6-434.7-259.9-1391.4-1214.3C1146.6-26.8,668.2-519,606.1-601.7c-662.4-890-676.2-2173.4-32.2-3074.9c503.7-706.1,1285.6-1110.8,2148.1-1110.8c545.1,0,1007.3,138,1460.4,432.4c197.8,128.8,1189,1101.6,1258,1232.7c69,135.7,50.6,347.3-41.4,478.4c-135.7,193.2-409.4,269.1-607.2,167.9c-43.7-20.7-303.6-257.6-575-526.7c-308.2-301.3-542.8-515.2-625.6-561.2c-715.2-420.9-1690.4-243.8-2168.8,391c-236.9,315.1-340.4,623.3-340.4,1007.3c-2.3,296.7,39.1,466.9,181.7,759l108.1,218.5l899.3,903.8C3193.5,642.5,3333.8,764.4,3609.8,877.1c232.3,92,374.9,119.6,641.7,117.3c397.9-2.3,733.7-119.6,1014.2-356.5c273.7-227.7,296.7-239.2,492.2-239.2c154.1,0,186.3,6.9,266.8,62.1c140.3,98.9,202.4,207,211.6,374.9c11.5,179.4-34.5,278.3-213.9,450.8c-381.8,365.7-988.9,641.7-1494.9,676.2c-101.2,6.9-209.3,16.1-241.5,20.7C4253.7,1985.6,4136.4,1981,4021.4,1971.8z"/></g></g>
+</svg>
+  </button>
+</div>
+
+            </div>
+
+            <p>TIL about <a href="http://www.scs.stanford.edu/brop/bittau-brop.pdf">blind rop</a>, a technique
+to write buffer overflows against targets that restart after a crash. As
+example, targets that fork and recovers when the child crashes.  Since the child
+has the same memory layout as the parent the stack canary will be the same.</p>
+
+<p>The idea here is that we can perform an operation similar to a blind SQLI with
+our binary, overring one byte at each time until we find all the bytes that form
+our canary. So suppose we have a layout like the one below with our canary being
+<code>11 22 33 44</code>:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">+------------------------------+------------+
+| A A A A A A A A A A A A A A A| 11 22 33 44|
++------------------------------+------------+
+&lt;-------- buffer -------------&gt;&lt;---canary---&gt;</code></pre></div>
+
+<p>In order to figure out the right canary in a blind attack we would overflow up
+to the first byte and start our investigation:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">+------------------------------+------------+
+| A A A A A A A A A A A A A A A| 00 22 33 44| -&gt; CRASH
++------------------------------+------------+
+&lt;-------- buffer -------------&gt;&lt;---canary---&gt;
+
++------------------------------+------------+
+| A A A A A A A A A A A A A A A| 01 22 33 44| -&gt; CRASH
++------------------------------+------------+
+&lt;-------- buffer -------------&gt;&lt;---canary---&gt;
+
++------------------------------+------------+
+| A A A A A A A A A A A A A A A| 02 22 33 44| -&gt; CRASH
++------------------------------+------------+
+&lt;-------- buffer -------------&gt;&lt;---canary---&gt;
+
+...
+
++------------------------------+------------+
+| A A A A A A A A A A A A A A A| 11 22 33 44| -&gt; SUCCESS
++------------------------------+------------+
+&lt;-------- buffer -------------&gt;&lt;---canary---&gt;</code></pre></div>
+
+<p>So we found that the first byte is <code>11</code>, after that we will move to the second
+byte and repeat the algorithm until we find all the required bytes.</p>
+
+<p>A small python scrip representing the algorithm on a 32 bit binary:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak_canary_byte</span>(canary_prefix):
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">256</span>):
+        p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span> buffer_size_until_canary <span style="color:#f92672">+</span> canary_prefix <span style="color:#f92672">+</span> chr(i)
+        <span style="color:#75715e"># Send p to the binary and see if we get a crash or not</span>
+        <span style="color:#75715e"># Return if a crash didn&#39;t happen</span>
+    <span style="color:#66d9ef">return</span> None
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak_canary</span>():
+    canary <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+        b <span style="color:#f92672">=</span> leak_canary_byte(canary)
+        <span style="color:#66d9ef">if</span> b <span style="color:#f92672">is</span> None:
+            err(<span style="color:#e6db74">&#34;bail&#34;</span>)
+            exit(<span style="color:#ae81ff">1</span>)
+        ok(<span style="color:#e6db74">&#34;Found canary[</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">]=</span><span style="color:#e6db74">%.2x</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">%</span>(i, ord(b)))
+        canary <span style="color:#f92672">+=</span> b
+    <span style="color:#66d9ef">return</span> canary</code></pre></div>
+
+          </div>
+        
+      
+        
+      
+        
+          <div class="main-item catalogue-item">
+            <div class="metadata">
+              
+
+  <ul class="tags">
+    
+      <li class="tag">
           <a href="https://todayilearned.dev/tags/linux/">linux</a>
         </li></ul>
 
@@ -104,8 +196,6 @@ your ELF file depends on:</p>
 </ol>
 
           </div>
-        
-      
         
       
         
@@ -385,114 +475,6 @@ environment. As an example:</p>
     b: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">&#39;a</span> <span style="color:#66d9ef">i32</span>,
 }
 </code></pre></div>
-
-          </div>
-        
-      
-        
-          <div class="main-item catalogue-item">
-            <div class="metadata">
-              
-
-  <ul class="tags">
-    
-      <li class="tag">
-          <a href="https://todayilearned.dev/tags/vim/">vim</a>
-        </li></ul>
-
-
-              <div class="permalink">
-  <button aria-label="Copy permalink" data-clipboard-text="https://todayilearned.dev/posts/vim-recursive-macro/" type="button">
-  	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
-<g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M6792.8,4975.4c-326.6-59.8-678.5-202.4-977.4-397.9c-197.8-128.8-1189-1101.6-1258-1232.7c-36.8-71.3-43.7-121.9-36.8-234.6c11.5-177.1,87.4-301.3,236.9-388.7c126.5-75.9,328.9-85.1,450.8-23c43.7,23,296.7,255.3,561.2,515.2c266.8,262.2,535.9,510.6,600.3,549.7c289.8,181.7,650.9,271.4,998.2,250.7c269.1-18.4,411.7-55.2,653.2-172.5c556.6-269.1,894.6-816.5,894.6-1453.5c2.3-296.7-39.1-464.6-181.7-759L8628,1410.6L7692,479.2C6682.4-530.5,6638.7-567.2,6275.3-686.8c-163.3-55.2-220.8-62.1-506-62.1c-276-2.3-347.3,4.6-494.5,50.6c-241.5,75.9-446.2,188.6-630.2,349.6c-184,158.7-269.1,193.2-453.1,179.4c-255.3-18.4-434.7-213.9-434.7-476.1c0-163.3,73.6-294.4,255.3-455.4c878.5-784.2,2203.3-876.2,3201.4-223.1c195.5,126.5,1996.3,1904.3,2178,2148.1c667,894.6,678.5,2168.8,29.9,3079.5c-411.7,575-1046.4,970.6-1738.7,1083.2C7485,5019.1,6999.7,5012.2,6792.8,4975.4z"/><path d="M4021.4,1971.8c-340.4-27.6-667-117.3-961.3-264.5c-324.3-165.6-434.7-259.9-1391.4-1214.3C1146.6-26.8,668.2-519,606.1-601.7c-662.4-890-676.2-2173.4-32.2-3074.9c503.7-706.1,1285.6-1110.8,2148.1-1110.8c545.1,0,1007.3,138,1460.4,432.4c197.8,128.8,1189,1101.6,1258,1232.7c69,135.7,50.6,347.3-41.4,478.4c-135.7,193.2-409.4,269.1-607.2,167.9c-43.7-20.7-303.6-257.6-575-526.7c-308.2-301.3-542.8-515.2-625.6-561.2c-715.2-420.9-1690.4-243.8-2168.8,391c-236.9,315.1-340.4,623.3-340.4,1007.3c-2.3,296.7,39.1,466.9,181.7,759l108.1,218.5l899.3,903.8C3193.5,642.5,3333.8,764.4,3609.8,877.1c232.3,92,374.9,119.6,641.7,117.3c397.9-2.3,733.7-119.6,1014.2-356.5c273.7-227.7,296.7-239.2,492.2-239.2c154.1,0,186.3,6.9,266.8,62.1c140.3,98.9,202.4,207,211.6,374.9c11.5,179.4-34.5,278.3-213.9,450.8c-381.8,365.7-988.9,641.7-1494.9,676.2c-101.2,6.9-209.3,16.1-241.5,20.7C4253.7,1985.6,4136.4,1981,4021.4,1971.8z"/></g></g>
-</svg>
-  </button>
-</div>
-
-            </div>
-
-            <p>TIL about recursive macros in vim. As the name implies, it consists of calling
-your macro within the macro your are building. Pre-requisites:</p>
-
-<ol>
-<li>Having a clear register (<code>qa</code> -&gt; <code>q</code> to clear register <code>a</code>)</li>
-<li>Having a break point through <code>t</code> or <code>f</code> if we don&rsquo;t want to run on all lines</li>
-</ol>
-
-<p>Suppose we have the following file:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"> <span style="color:#ae81ff">1</span>  abc,<span style="color:#ae81ff">123</span>
- <span style="color:#ae81ff">2</span>  bcd,<span style="color:#ae81ff">4</span>
- <span style="color:#ae81ff">3</span>  cde,<span style="color:#ae81ff">54321</span>
- <span style="color:#ae81ff">4</span>  <span style="color:#66d9ef">def</span>,<span style="color:#ae81ff">88</span></code></pre></div>
-
-<p>And we want the end result to be:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;abc&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>
-hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;bcd&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
-hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;cde&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">54321</span>
-hash<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;def&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">88</span></code></pre></div>
-
-<p>In order to build our recursive macro:</p>
-
-<table>
-<thead>
-<tr>
-<th>Command &nbsp;&nbsp;</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>qa</code></td>
-<td>Start macro</td>
-</tr>
-
-<tr>
-<td><code>02cw</code></td>
-<td>Go to beginning of line and change two words</td>
-</tr>
-
-<tr>
-<td><code>hash&quot;[&lt;esc&gt;</code>&nbsp;</td>
-<td>Insert <code>hash[&quot;</code> characters and exit normal mode</td>
-</tr>
-
-<tr>
-<td><code>f,</code></td>
-<td>Find the next <code>,</code> character</td>
-</tr>
-
-<tr>
-<td><code>i&quot;] = &lt;esc&gt;</code></td>
-<td>Insert <code>&quot;] =</code> characters and exit normal mode</td>
-</tr>
-
-<tr>
-<td><code>lx</code></td>
-<td>Move left and delete a character (the <code>,</code> in this case)</td>
-</tr>
-
-<tr>
-<td><code>j</code></td>
-<td>Go to the line below</td>
-</tr>
-
-<tr>
-<td><code>@a</code></td>
-<td>Call your macro. This creates the recursion</td>
-</tr>
-
-<tr>
-<td><code>q</code></td>
-<td>Finish macro</td>
-</tr>
-</tbody>
-</table>
-
-<p>After that calling <code>@a</code> will change every line.</p>
 
           </div>
         

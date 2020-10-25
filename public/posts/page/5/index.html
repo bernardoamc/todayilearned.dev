@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/open-uri/" class="catalogue-item">
+    <div>
+        <time datetime="2019-03-30 12:50:45 -0400 EDT" class="catalogue-time">March 30, 2019</time>
+        <h1 class="catalogue-title">open-uri</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL open-uri internally patches Kernel.open allowing remote code execution and reading local files. If the string provided to open-uri starts with a pipe it will get executed as a command:
+require &#34;open-uri&#34; irb(main):001:0&gt; require &#39;open-uri&#39; =&gt; true irb(main):002:0&gt; open(&#39;|ls&#39;).to_a =&gt; [&#34;content\n&#34;, &#34;data\n&#34;, &#34;layouts\n&#34;, &#34;resources\n&#34;] For more information check this resource.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/scroll-behavior/" class="catalogue-item">
     <div>
         <time datetime="2019-03-27 20:45:00 -0400 EDT" class="catalogue-time">March 27, 2019</time>
@@ -193,20 +207,6 @@ Let&rsquo;s see a small example:
             TIL about the at command. It allows us to schedule commands to be executed at a later time.
 $ echo &#34;bla&#34; | at now + 5 minutes or if you want to execute commands from a file later on:
 $ at -f path/to/file 9:30 PM Tue We can type atq to see existing jobs. For more information check man or tldr, it&rsquo;s a really interesting suite of commands.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/rake-about/" class="catalogue-item">
-    <div>
-        <time datetime="2019-03-14 07:50:10 -0400 EDT" class="catalogue-time">March 14, 2019</time>
-        <h1 class="catalogue-title">bin/rails about</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            You can use bin/rails about to get information from your Rails project.
-$ bin/rails about About your application&#39;s environment Rails version 5.2.2 Ruby version 2.6.1-p33 (x86_64-darwin18) RubyGems version 3.0.2 Rack version 2.0.6 JavaScript Runtime Node.js (V8) Middleware Webpacker::DevServerProxy, Rack::Cors, ... Application root /my/application/root Environment development Database adapter mysql2 Database schema version 20190310174207 
         </p>
     </div>
 </a>

@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/merkle-tree/" class="catalogue-item">
+    <div>
+        <time datetime="2019-07-15 09:00:10 -0400 EDT" class="catalogue-time">July 15, 2019</time>
+        <h1 class="catalogue-title">merkle tree</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL about the merkle tree data structure, a tree structure in which each leaf node is a hash of a block of data, and each non-leaf node is a hash of its children.
+Label ROOT Value H(H01 + H23) / \ Label [H01] [H23] Value H(H0 + H1) H(H2 + H3) / \ / \ Label [H0] [H1] [H2] [H3] Value H(A) H(B) H(C) H(D) | | | | A B C D It&rsquo;s mostly used in distributed systems for efficient data verification since it only depends on hashes instead of full files.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/console-group/" class="catalogue-item">
     <div>
         <time datetime="2019-06-29 09:15:00 -0400 EDT" class="catalogue-time">June 29, 2019</time>
@@ -185,20 +199,6 @@ ary = [0, 4, 7, 10, 12] ary.bsearch {|x| x &gt;= 4 } #=&gt; 4 ary.bsearch {|x| x
             TIL about Amdahl&rsquo;s Law as a way to measure the result of a given optimization. It&rsquo;s especially useful to compare different optimizations and see the maximum performance each optimization provides for your system. Another cool thing is that Amdahl&rsquo;s Law works for parallel or serial programs.
 It has a few implications:
  Make the common case fast Optimizations wil have less and less effects (Law of diminishing returns)  Here&rsquo;s an interesting video about it.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/hash-deep-merge/" class="catalogue-item">
-    <div>
-        <time datetime="2019-05-07 12:50:45 -0400 EDT" class="catalogue-time">May 7, 2019</time>
-        <h1 class="catalogue-title">hash-deep-merge</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL that Hash#deep_merge accepts a block in which you can specify how values from the same key should be merged:
-h1 = { a: { b: 1 }, c: 2} h2 = { a: { d: 3 }, c: 4} h1.deep_merge(h2) # =&gt; { a: { b: 1, d: 3 }, c: 4 } h1.deep_merge(h2) { |k, v1, v2| v1 + v2 } # =&gt; { a: { b: 1, d: 3 }, c: 6 } 
         </p>
     </div>
 </a>

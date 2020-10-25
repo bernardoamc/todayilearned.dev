@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://todayilearned.dev/posts/brop/</loc>
+    <lastmod>2020-10-25T17:50:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/buffer-overflow/</loc>
+    <lastmod>2020-10-25T17:50:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/posts/</loc>
+    <lastmod>2020-10-25T17:50:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/tags/</loc>
+    <lastmod>2020-10-25T17:50:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://todayilearned.dev/</loc>
+    <lastmod>2020-10-25T17:50:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://todayilearned.dev/posts/elf-library-loading/</loc>
     <lastmod>2020-10-09T23:30:10-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://todayilearned.dev/tags/linux/</loc>
-    <lastmod>2020-10-09T23:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/posts/</loc>
-    <lastmod>2020-10-09T23:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/tags/</loc>
-    <lastmod>2020-10-09T23:30:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://todayilearned.dev/</loc>
     <lastmod>2020-10-09T23:30:10-04:00</lastmod>
   </url>
   

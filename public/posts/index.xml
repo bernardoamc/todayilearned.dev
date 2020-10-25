@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2020 23:30:10 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2020 17:50:10 -0400</lastBuildDate>
     
 	<atom:link href="https://todayilearned.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blind rop</title>
+      <link>https://todayilearned.dev/posts/brop/</link>
+      <pubDate>Sun, 25 Oct 2020 17:50:10 -0400</pubDate>
+      
+      <guid>https://todayilearned.dev/posts/brop/</guid>
+      <description>TIL about blind rop, a technique to write buffer overflows against targets that restart after a crash. As example, targets that fork and recovers when the child crashes. Since the child has the same memory layout as the parent the stack canary will be the same.
+The idea here is that we can perform an operation similar to a blind SQLI with our binary, overring one byte at each time until we find all the bytes that form our canary.</description>
+    </item>
     
     <item>
       <title>ELF library loading</title>

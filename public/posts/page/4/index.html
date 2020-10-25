@@ -61,6 +61,20 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://todayilearned.dev/posts/hash-deep-merge/" class="catalogue-item">
+    <div>
+        <time datetime="2019-05-07 12:50:45 -0400 EDT" class="catalogue-time">May 7, 2019</time>
+        <h1 class="catalogue-title">hash-deep-merge</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            TIL that Hash#deep_merge accepts a block in which you can specify how values from the same key should be merged:
+h1 = { a: { b: 1 }, c: 2} h2 = { a: { d: 3 }, c: 4} h1.deep_merge(h2) # =&gt; { a: { b: 1, d: 3 }, c: 4 } h1.deep_merge(h2) { |k, v1, v2| v1 + v2 } # =&gt; { a: { b: 1, d: 3 }, c: 6 } 
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://todayilearned.dev/posts/ramdisk-tests/" class="catalogue-item">
     <div>
         <time datetime="2019-05-04 15:30:10 -0400 EDT" class="catalogue-time">May 4, 2019</time>
@@ -189,20 +203,6 @@ The behaviour being fixed is:
 Let&rsquo;s see some client side input without the template tag:
 let container = document.createElement(&#39;div&#39;); // This will trigger the alert  container.innerHTML = &#34;&lt;img src=x onerror=alert(1)&gt;&#34;  Now let&rsquo;s use the &lt;template&gt; tag:
 let container = document.createElement(&#39;template&#39;); // Alert NOT triggered  container.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://todayilearned.dev/posts/open-uri/" class="catalogue-item">
-    <div>
-        <time datetime="2019-03-30 12:50:45 -0400 EDT" class="catalogue-time">March 30, 2019</time>
-        <h1 class="catalogue-title">open-uri</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            TIL open-uri internally patches Kernel.open allowing remote code execution and reading local files. If the string provided to open-uri starts with a pipe it will get executed as a command:
-require &#34;open-uri&#34; irb(main):001:0&gt; require &#39;open-uri&#39; =&gt; true irb(main):002:0&gt; open(&#39;|ls&#39;).to_a =&gt; [&#34;content\n&#34;, &#34;data\n&#34;, &#34;layouts\n&#34;, &#34;resources\n&#34;] For more information check this resource.
         </p>
     </div>
 </a>
